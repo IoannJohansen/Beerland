@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BeerlandWeb.Controllers
 {
-    [Route("api/statistic")]
+    [Route("statistic")]
     public class StatisticController : Controller
     {
         public StatisticController(IStatisticService statisticService)
@@ -50,7 +50,7 @@ namespace BeerlandWeb.Controllers
         [Route("index")]
         public IActionResult Index()
         {
-            return View("Index");
+            return View();
         }
     }
 }

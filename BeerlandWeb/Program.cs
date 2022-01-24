@@ -1,5 +1,5 @@
 using AutoMapper;
-using Beerland_server.Mapper;
+using BeerlandWeb.Mapper;
 using BLL.Interfaces;
 using BLL.Services;
 using DAL;
@@ -34,6 +34,6 @@ app.UseRouting();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Statistic}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

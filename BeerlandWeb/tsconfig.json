@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "module": "es2015",
+    "types": ["vuetify"],
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": false
+  },
+  "exclude": ["node_modules"]
+}
