@@ -78,4 +78,13 @@
       <PackageReference Include="Serilog.AspNetCore" Version="4.1.1-dev-00250" />
     </ItemGroup>
 
+    <ItemGroup>
+      <TypeScriptCompile Include="Components\main.ts" />
+      <TypeScriptCompile Include="d.ts" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\dist" />
+    </ItemGroup>
+
 </Project>
