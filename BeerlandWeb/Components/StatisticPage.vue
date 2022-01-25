@@ -1,12 +1,6 @@
 ﻿<template>
-  <v-app>
-    <h1>{{text}}</h1>
-    <v-btn dark>
-      Push me
-    </v-btn>
-  </v-app>
+  <h1 align="center">Im statistic page</h1>
 </template>
-
 <script lang="ts">
   import Vue from "vue";
   import Component from "vue-class-component";
@@ -15,7 +9,6 @@
     name: "Statistic-Page"
   })
   export default class StatisticPage extends Vue {
-    text : string = "STATISTIC PAGE!";
-    statisticNum : number = 1222;
+    
   }
 </script>

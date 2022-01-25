@@ -1,11 +1,8 @@
 ﻿<template>
-  <v-app>
-    <h1>{{text}}</h1>
-    <v-btn>
-      Push me
-    </v-btn>
-    <a href="/statistic/index">Go there</a>
-  </v-app>
+    <div>
+      <h1 align="center">Home page</h1>
+      <h4 align="center"><a href="/statistic/index">View statistic</a></h4>
+    </div>
 </template>
 
 <script lang="ts">
@@ -16,7 +13,6 @@
     name: "Home-Page"
   })
   export default class HomePage extends Vue {
-    text : string = "HOME PAGE!";
-    homeNum : number = 1112;
+  
   }
 </script>

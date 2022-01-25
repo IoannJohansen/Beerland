@@ -4,8 +4,15 @@
     <title>@ViewData["Title"]</title>
     </head>
 <body>
-    @RenderBody()
 
-    @RenderSection("Scripts", required: false)
+<div id="app">
+    <App-Container>
+        <App-Bar>
+            @RenderBody()
+        </App-Bar>
+    </App-Container>
+</div>
+
+@RenderSection("Scripts", required: false)
 </body>
 </html>
