@@ -1,9 +1,16 @@
 ﻿@{
-    ViewBag.Title = "Beerland";
+    ViewBag.Title = "Statistic";
     Layout = "_Layout";
 }
 
-<Statistic-Page></Statistic-Page>
+<Statistic-Page>
+    <template v-slot:date-selector>
+        <Date-Picker />
+    </template>
+    <template v-slot:statistic-drawer>
+        <Statistic-Drawer />
+    </template>
+</Statistic-Page>
 
 @section Scripts
 {

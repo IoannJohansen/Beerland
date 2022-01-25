@@ -4,6 +4,8 @@ import StatisticPage from "./StatisticPage.vue"
 import vuetify from "../plugins/vuetify.js";
 import AppBar from "./AppBar.vue";
 import AppContainer from "./AppContainer.vue";
+import DatePicker from "./DatePicker.vue";
+import StatisticDrawer from "./StatisticDrawer.vue";
 
 new Vue({
     vuetify,
@@ -12,6 +14,8 @@ new Vue({
         HomePage,
         StatisticPage,
         AppBar,
-        AppContainer
+        AppContainer,
+        DatePicker,
+        StatisticDrawer
     }
 })
