@@ -4,6 +4,7 @@
     <v-btn>
       Push me
     </v-btn>
+    <a href="/statistic/index">Go there</a>
   </v-app>
 </template>
 

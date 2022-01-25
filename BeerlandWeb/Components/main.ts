@@ -1,6 +1,6 @@
 ﻿import Vue from "vue";
-import HomePage from "@/Pages/Home/HomePage.vue"
-import StatisticPage from "@/Pages/Statistic/StatisticPage.vue"
+import HomePage from "@/HomePage.vue"
+import StatisticPage from "@/StatisticPage.vue"
 import vuetify from "../plugins/vuetify.js";
 
 new Vue({

@@ -1,7 +1,7 @@
 ﻿<template>
   <v-app>
     <h1>{{text}}</h1>
-    <v-btn>
+    <v-btn dark>
       Push me
     </v-btn>
   </v-app>
