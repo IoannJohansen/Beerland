@@ -4,6 +4,7 @@
     <v-col>
       <label for="year-selector">Year</label>
       <v-select
+          @change="sayTest"
           id="year-selector"
           outlined
           v-model="select"
@@ -46,9 +47,15 @@ import Vue from "vue";
 
 @Component({
   name: "Date-Picker",
+  props: {
+    test: String,
+    testNum: Number
+  }
 })
 export default class DatePicker extends Vue {
-
+  sayTest() : void {
+    alert(`TestString: ${this.$props.test} and testNumber: ${this.$props.testNum}`)
+  }
 }
 </script>
 
