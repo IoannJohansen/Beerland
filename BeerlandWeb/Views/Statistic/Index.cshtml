@@ -3,9 +3,10 @@
     Layout = "_Layout";
 }
 
+<h1 align="center">Statistic page</h1>
 <Statistic-Page>
     <template v-slot:date-selector>
-        <Date-Picker test="Test string" testNum=Number(1213) />
+        <Date-Picker />
     </template>
     <template v-slot:statistic-drawer>
         <Statistic-Drawer />
@@ -14,5 +15,5 @@
 
 @section Scripts
 {
-    <script src="@Url.Content("~/dist/common.bundle.js")"></script>
+    <script src="@Url.Content("~/dist/statistic.bundle.js")"></script>
 }

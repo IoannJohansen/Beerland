@@ -79,8 +79,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <TypeScriptCompile Include="Components\main.ts" />
       <TypeScriptCompile Include="d.ts" />
+      <TypeScriptCompile Include="Scripts\common.ts" />
+      <TypeScriptCompile Include="Scripts\home.ts" />
+      <TypeScriptCompile Include="Scripts\statistic.ts" />
     </ItemGroup>
 
     <ItemGroup>

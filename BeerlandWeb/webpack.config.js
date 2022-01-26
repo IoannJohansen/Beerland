@@ -4,7 +4,8 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 module.exports = {
   mode: "development",
   entry: {
-    common: "./Components/main.ts"
+    statistic: "./Scripts/statistic.ts",
+    home: "./Scripts/home.ts"
   },
   output: {
     path: path.resolve(__dirname, "./wwwroot/dist"),

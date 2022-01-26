@@ -2,37 +2,33 @@
   <v-form class="date-input-form">
     <h3 align="center">Select date</h3>
     <v-col>
-      <label for="year-selector">Year</label>
       <v-select
-          @change="sayTest"
           id="year-selector"
           outlined
-          v-model="select"
-          :items="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+          v-model="selectedYear"
+          :items="years"
           :rules="[v => !!v || 'Item is required']"
           label="Select year"
           required
       ></v-select>
     </v-col>
     <v-col>
-      <label for="month-selector">Month</label>
       <v-select
           id="month-selector"
           outlined
-          v-model="select"
-          :items="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+          v-model="selectedMonth"
+          :items="months"
           :rules="[v => !!v || 'Item is required']"
           label="Select month"
           required
       ></v-select>
     </v-col>
     <v-col>
-      <label for="day-selector">Day</label>
       <v-select
           id="day-selector"
           outlined
-          v-model="select"
-          :items="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+          v-model="selectedDay"
+          :items="days"
           :rules="[v => !!v || 'Item is required']"
           label="Select day"
           required
@@ -47,15 +43,19 @@ import Vue from "vue";
 
 @Component({
   name: "Date-Picker",
-  props: {
-    test: String,
-    testNum: Number
-  }
+ 
 })
 export default class DatePicker extends Vue {
-  sayTest() : void {
-    alert(`TestString: ${this.$props.test} and testNumber: ${this.$props.testNum}`)
+  createRange(start, end) : Array<Number> {
+    return Array.from(Array(end - start + 1).keys()).map(x => x + start)
   }
+  //TODO: add n to 0 generation of year
+  years = [...this.createRange(0, new Date().getFullYear())]
+  months= [...this.createRange(0, 11)]
+  days = [...this.createRange(0, 31)]
+  selectedYear = new Date().getFullYear()
+  selectedMonth = new Date().getMonth()
+  selectedDay = new Date().getDate()
 }
 </script>
 
