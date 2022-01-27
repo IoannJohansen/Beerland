@@ -3,15 +3,16 @@
     Layout = "_Layout";
 }
 
-<h1 align="center">Statistic page</h1>
-<Statistic-Page>
-    <template v-slot:date-selector>
-        <Date-Picker />
-    </template>
-    <template v-slot:statistic-drawer>
-        <Statistic-Drawer />
-    </template>
-</Statistic-Page>
+<App-Bar>
+    <div class="d-flex flex-row">
+        <div class="col-3">
+            <Date-picker />
+        </div>
+        <div style="margin: 12px;">
+            <Statistic-drawer />
+        </div>
+      </div>
+</App-Bar>
 
 @section Scripts
 {

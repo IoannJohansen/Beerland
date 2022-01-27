@@ -1,9 +1,15 @@
-﻿import comps from "./common";
-import Vue from "vue";
-import vuetify from "../Plugins/vuetify";
+﻿import BasePage from "./common";
+import DatePicker from "@/DatePicker.vue";
+import StatisticDrawer from "@/StatisticDrawer.vue";
 
-new Vue({
-    vuetify,
-    el: "#app",
-    components: comps.components
-})
+export default class StatisticPageApp extends BasePage{
+    
+    constructor() {
+        super({
+            DatePicker,
+            StatisticDrawer
+        });
+    }
+}
+
+new StatisticPageApp()

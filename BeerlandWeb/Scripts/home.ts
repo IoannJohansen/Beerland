@@ -1,9 +1,11 @@
-﻿import comps from "./common";
-import Vue from "vue";
-import vuetify from "../Plugins/vuetify";
+﻿import BasePage from "./common";
 
-new Vue({
-    vuetify,
-    el: "#app",
-    components: comps.components
-})
+class HomePageApp extends BasePage{
+
+    constructor() {
+        super({
+        });
+    }
+}
+
+new HomePageApp()

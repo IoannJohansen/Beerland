@@ -1,7 +1,7 @@
 ﻿<template>
-    <v-app>
-      <slot/>
-    </v-app>
+  <div>
+    <slot/>
+  </div>
 </template>
 
 <script lang="ts">

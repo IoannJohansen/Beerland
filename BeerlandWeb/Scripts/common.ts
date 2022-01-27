@@ -1,31 +1,32 @@
-﻿import Vue from "vue";
-import HomePage from "@/HomePage.vue"
-import StatisticPage from "@/StatisticPage.vue"
-import AppBar from "@/AppBar.vue";
+﻿import AppBar from "@/AppBar.vue";
 import AppContainer from "@/AppContainer.vue";
-import DatePicker from "@/DatePicker.vue";
-import StatisticDrawer from "@/StatisticDrawer.vue";
+import Vue from "vue";
+import vuetify from "../Plugins/vuetify";
 
-export default {
-    components: {
-        HomePage,
-        StatisticPage,
+export default class BasePage {
+
+    constructor(childPageComponents) {
+        this.childPageComponents = {
+            ...childPageComponents
+        }
+        this.startVueApp();
+    }
+    
+    childPageComponents = {}
+    
+    startVueApp(){
+        new Vue({
+            vuetify,
+            el: "#app",
+            components: {
+                ...this.components,
+                ...this.childPageComponents
+            }
+        })
+    }
+    
+    components = {
         AppBar,
-        AppContainer,
-        DatePicker,
-        StatisticDrawer
+        AppContainer
     }
 }
-
-// new Vue({
-//     vuetify,
-//     el: "#app",
-//     components: {
-//         HomePage,
-//         StatisticPage,
-//         AppBar,
-//         AppContainer,
-//         DatePicker,
-//         StatisticDrawer
-//     }
-// })

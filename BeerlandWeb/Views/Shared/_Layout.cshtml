@@ -8,11 +8,9 @@
 <body>
 
 <div id="app">
-    <App-Container>
-        <App-Bar>
-            @RenderBody()
-        </App-Bar>
-    </App-Container>
+    <v-app>
+        @RenderBody()
+    </v-app>
 </div>
 
 @RenderSection("Scripts", required: false)
