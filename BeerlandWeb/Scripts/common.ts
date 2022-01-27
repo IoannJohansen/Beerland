@@ -21,7 +21,7 @@ export default class BasePage {
             components: {
                 ...this.components,
                 ...this.childPageComponents
-            }
+            },
         })
     }
     

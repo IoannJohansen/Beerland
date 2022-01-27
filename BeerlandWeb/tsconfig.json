@@ -3,7 +3,7 @@
     "target": "ES2018",
     "strict": true,
     "module": "ES2015",
-    "types": ["vuetify"],
+    "types": ["vuetify", "node"],
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "noImplicitAny": false,
