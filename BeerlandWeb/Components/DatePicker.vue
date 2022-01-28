@@ -3,7 +3,7 @@
     <h3 align="center">Select date</h3>
     <v-col>
       <v-select
-          @change="changeDate()"
+          @change="changeDate(emitDatePick)"
           outlined
           v-model="selectedYear"
           :items="years"
@@ -14,7 +14,7 @@
     </v-col>
     <v-col>
       <v-select
-          @change="changeDate()"
+          @change="changeDate(emitDatePick)"
           outlined
           v-model="selectedMonth"
           :items="months"
@@ -25,6 +25,7 @@
     </v-col>
     <v-col>
       <v-select
+          @change="emitDatePick()"
           outlined
           v-model="selectedDay"
           :items="days"
@@ -34,6 +35,7 @@
       ></v-select>
     </v-col>
   </v-form>
+  
 </template>
 
 <script lang="ts">
@@ -41,16 +43,12 @@ import Component from "vue-class-component";
 import Vue from "vue";
 import { range, reverseRange } from "../Utils/OrderGenerators/RangeGenerator";
 import { eMonthToArray, monthToNum, numToMonth } from "../Utils/Converters/MonthConverter";
-const moment = require('moment');
 import IDate from "../Utils/Interfaces/IDate";
-
-//TODO: ADD OUTPUT PARAMETER:   date : Idate
+import {Prop} from "vue-property-decorator";
+const moment = require('moment');
 
 @Component({
   name: "Date-Picker",
-  props: {
-    a : Object
-  }
 })
 export default class DatePicker extends Vue {
   
@@ -59,24 +57,32 @@ export default class DatePicker extends Vue {
   months : String[] = [...eMonthToArray()]
   
   selectedYear : Number = new Date().getFullYear()
-  
+
   selectedMonth : String = numToMonth(new Date().getMonth()+1)
-  
+
   selectedDay : Number = new Date().getDate()
   
   days : Number[] = [...range(1, moment(`${this.selectedYear}-${this.addPrefixToNum(monthToNum(this.selectedMonth), 2)}`, "YYYY-MM").daysInMonth()+1)]
   
-  changeDate() : void {
+  changeDate(assignToOutputDate : Function) : void {
     this.days = [...range(1, moment(`${this.selectedYear}-${this.addPrefixToNum(monthToNum(this.selectedMonth), 2)}`, "YYYY-MM").daysInMonth()+1)]
     this.selectedDay = 1;
+    assignToOutputDate();
   }
   
   addPrefixToNum(number, requiredSize) : String {
     let s = number + "";
     while (s.length < requiredSize) s = "0" + s;
     return s;
-  } 
+  }
   
+  emitDatePick(){
+    this.$emit('update:date',{
+      Year : this.selectedYear,
+      Month : this.selectedMonth,
+      Day : this.selectedDay
+    })
+  }
 }
 </script>
 

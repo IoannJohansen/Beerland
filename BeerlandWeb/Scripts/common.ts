@@ -5,14 +5,18 @@ import vuetify from "../Plugins/vuetify";
 
 export default class BasePage {
 
-    constructor(childPageComponents) {
-        this.childPageComponents = {
-            ...childPageComponents
-        }
+    constructor(childPageComponents : Object, pageData : Object, pageMethods : Object) {
+        this.childPageComponents = childPageComponents;
+        this.pageData = pageData;
+        this.pageMethods = pageMethods;
         this.startVueApp();
     }
     
     childPageComponents = {}
+    
+    pageData = {}
+    
+    pageMethods = {}
     
     startVueApp(){
         new Vue({
@@ -22,6 +26,12 @@ export default class BasePage {
                 ...this.components,
                 ...this.childPageComponents
             },
+            data: {
+                ...this.pageData
+            },
+            methods: {
+                ...this.pageMethods
+            }
         })
     }
     
