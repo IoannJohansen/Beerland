@@ -74,9 +74,9 @@ export default class DatePicker extends Vue {
     while (s.length < requiredSize) s = "0" + s;
     return s;
   }
-  
+
   emitDatePick(){
-    this.$emit('update:date',{
+    this.$emit('pick',{
       Year : this.selectedYear,
       Month : monthToNum(this.selectedMonth),
       Day : this.selectedDay
@@ -86,6 +86,7 @@ export default class DatePicker extends Vue {
 </script>
 
 <style scoped>
+
 .date-input-form {
   border: 1px lightgray solid;
 }

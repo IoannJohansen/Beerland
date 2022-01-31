@@ -5,11 +5,8 @@ import vuetify from "../Plugins/vuetify";
 
 export default class BasePage {
 
-    constructor(childPageComponents : Object, pageData : Object, pageMethods : Object) {
+    constructor(childPageComponents : Object) {
         this.childPageComponents = childPageComponents;
-        this.pageData = pageData;
-        this.pageMethods = pageMethods;
-        this.startVueApp();
     }
     
     childPageComponents = {}
@@ -18,6 +15,8 @@ export default class BasePage {
     
     pageMethods = {}
 
+    lifeCycleHooks = {}
+    
     components = {
         AppBar,
         AppContainer
@@ -32,7 +31,8 @@ export default class BasePage {
                 ...this.childPageComponents
             },
             data: this.pageData,
-            methods: this.pageMethods
+            methods: this.pageMethods,
+            ...this.lifeCycleHooks
         })
     }
 }

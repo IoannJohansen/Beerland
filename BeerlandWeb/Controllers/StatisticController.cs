@@ -14,7 +14,12 @@ namespace BeerlandWeb.Controllers
         
         private readonly IStatisticService statisticService;
 
-        #region API Methods
+        [HttpGet]
+        [Route("index")]
+        public IActionResult Index()
+        {
+            return View();
+        }
         
         [HttpGet]
         [Route("getStat")]
@@ -30,7 +35,7 @@ namespace BeerlandWeb.Controllers
 
         [HttpPost]
         [Route("addStartStat")]
-        public async Task<IActionResult> AddStartStatistic(CreateStatisticViewModel createStatisticViewModel)
+        public async Task<IActionResult> AddStartStatistic([FromBody] CreateStatisticViewModel createStatisticViewModel)
         {
             var createdStatistic =  await statisticService.AddStartStatistic(createStatisticViewModel);
             return StatusCode(StatusCodes.Status201Created, createdStatistic);
@@ -38,19 +43,10 @@ namespace BeerlandWeb.Controllers
 
         [HttpPost]
         [Route("addFinalStat")]
-        public async Task<IActionResult> AddFinalStatistic(FinalStatisticViewModel finalStatisticViewModel)
+        public async Task<IActionResult> AddFinalStatistic([FromBody] FinalStatisticViewModel finalStatisticViewModel)
         {
             var updatedStatistic = await statisticService.AddFinalStatistic(finalStatisticViewModel);
             return StatusCode(StatusCodes.Status200OK, updatedStatistic);
-        }
-
-        #endregion
-
-        [HttpGet]
-        [Route("index")]
-        public IActionResult Index()
-        {
-            return View();
         }
     }
 }

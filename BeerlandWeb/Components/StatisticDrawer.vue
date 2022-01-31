@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
-    <apexcharts v-if="series[0].data.length!==0" type="bar" height="550" :options="options" :series="series" ></apexcharts>
-    <h2 align="center" class="mt-14" v-else>No data found for this date</h2>
+    <apexcharts type="bar" height="550" :series="series" :options="options" ></apexcharts>
+<!--    <h2 align="center" class="mt-14" v-else>No data found for this date</h2>-->
   </div>
 </template>
 
@@ -10,7 +10,8 @@ import Vue from "vue";
 import Component from "vue-class-component";
 import VueApexCharts from 'vue-apexcharts';
 import IStatistic from "../Utils/Interfaces/IStatistic";
-import {Prop} from "vue-property-decorator";
+import { Prop } from "vue-property-decorator";
+Vue.use(VueApexCharts);
 
 @Component({
   name: "Statistic-Drawer",
@@ -28,15 +29,21 @@ export default class StatisticDrawer extends Vue {
       name: 'Produced',
       data: []
     }]
-  }) readonly series! : Array<IStatistic>
+  }) series! : Array<IStatistic>
 
   @Prop({
     default: []
-  }) readonly categories! : Array<String>
+  }) categories! : Array<String>
   
   options = {
-    xaxis: {
+    xaxis: {  
+      type: "category",
       categories: this.categories
+    },
+    chart: {
+      id: "chart",
+      type: 'bar',
+      height: "500px",
     },
     plotOptions: {
       bar: {
@@ -51,7 +58,22 @@ export default class StatisticDrawer extends Vue {
           return `${val} Barrel`
         }
       }
+    },
+    noData: {
+      text: "Select another date...",
+      style: {
+        fontSize: '20px',
+      }
     }
+  }
+  
+  updated(){
+    console.log("Updated");
+    ApexCharts.exec("chart", "updateOptions", {
+      xaxis: {
+        categories: this.categories
+      }
+    })
   }
   
 }

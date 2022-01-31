@@ -6,13 +6,9 @@ class HomePageApp extends BasePage{
     constructor() {
         super({
             
-        },{
-            homeGreetings : String
-        }, {
-            
         });
         
     }
 }
 
-new HomePageApp()
+new HomePageApp().startVueApp();
