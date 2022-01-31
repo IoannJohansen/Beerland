@@ -1,4 +1,4 @@
-﻿export const reverseRange = (start: number, end: number): number[] => {
+﻿export const reverseRange = (start: number, end: number) : number[] => {
     start = Math.floor(start);
     end = Math.floor(end);
     const diff = end - start;

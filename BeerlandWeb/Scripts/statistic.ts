@@ -43,19 +43,18 @@ export default class StatisticPageApp extends BasePage{
     
     onDatePickHandler(date : IDate) {
         getStatisticByDate(date).then(data => {
-            if (data.status===200){
-                console.log(data.data)
+            if (data.status===200) {
                 this.series = [{
                     name: 'Target',
-                    data: [...data.data.map((item)=>item.target)]
+                    data: data.data.map((item)=>item.target)
                 }, {
                     name: 'Produced',
-                    data: [...data.data.map((item)=>item.produced)]
+                    data: data.data.map((item)=>item.produced)
                 }];
                 this.categories = [
                     ...data.data.map((item)=>item.beerMark)   
                 ]
-            }else{
+            } else {
                 this.series = [{
                     name: 'Target',
                     data: []
