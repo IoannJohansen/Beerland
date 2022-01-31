@@ -80,12 +80,11 @@
 
     <ItemGroup>
       <TypeScriptCompile Include="d.ts" />
-      <TypeScriptCompile Include="Scripts\common.ts" />
+      <TypeScriptCompile Include="Scripts\basePage.ts" />
       <TypeScriptCompile Include="Scripts\home.ts" />
       <TypeScriptCompile Include="Scripts\statistic.ts" />
       <TypeScriptCompile Include="Utils\Converters\MonthConverter.ts" />
       <TypeScriptCompile Include="Utils\Enums\EMonth.ts" />
-      <TypeScriptCompile Include="Utils\Interfaces\IDate.ts" />
       <TypeScriptCompile Include="Utils\OrderGenerators\RangeGenerator.ts" />
     </ItemGroup>
 

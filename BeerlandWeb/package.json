@@ -2,6 +2,7 @@
   "name": "beerland",
   "version": "1.0.0",
   "dependencies": {
+    "apexcharts": "^3.33.0",
     "moment": "^2.29.1",
     "vue": "^2.6.14",
     "vuetify": "^2.6.2"
@@ -25,7 +26,7 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3"
   },
-  "main": "./Components/main.ts",
+  "main": "./Scipts/home.ts",
   "scripts": {
     "dev": "webpack --watch --hot --progress --no-stats",
     "build": "webpack"

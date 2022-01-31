@@ -43,7 +43,6 @@ import Component from "vue-class-component";
 import Vue from "vue";
 import { range, reverseRange } from "../Utils/OrderGenerators/RangeGenerator";
 import { eMonthToArray, monthToNum, numToMonth } from "../Utils/Converters/MonthConverter";
-import IDate from "../Utils/Interfaces/IDate";
 import {Prop} from "vue-property-decorator";
 const moment = require('moment');
 
@@ -79,7 +78,7 @@ export default class DatePicker extends Vue {
   emitDatePick(){
     this.$emit('update:date',{
       Year : this.selectedYear,
-      Month : this.selectedMonth,
+      Month : monthToNum(this.selectedMonth),
       Day : this.selectedDay
     })
   }

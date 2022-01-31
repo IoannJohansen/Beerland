@@ -1,4 +1,4 @@
-﻿import BasePage from "./common";
+﻿import BasePage from "./basePage";
 import {Prop} from "vue-property-decorator";
 
 class HomePageApp extends BasePage{
@@ -7,7 +7,7 @@ class HomePageApp extends BasePage{
         super({
             
         },{
-            
+            homeGreetings : String
         }, {
             
         });

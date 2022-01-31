@@ -1,7 +1,6 @@
-﻿import BasePage from "./common";
+﻿import BasePage from "./basePage";
 import DatePicker from "@/DatePicker.vue";
 import StatisticDrawer from "@/StatisticDrawer.vue";
-import IDate from "../Utils/Interfaces/IDate";
 
 export default class StatisticPageApp extends BasePage{
     
@@ -11,13 +10,13 @@ export default class StatisticPageApp extends BasePage{
             StatisticDrawer
         },{
             selectedDate : {
-                Year: 0,
-                Month: 0,
-                Day: 0,
+                Year: new Date().getFullYear(),
+                Month: new Date().getMonth()+1,
+                Day: new Date().getDate(),
             }
-            }
+        }
         , {
-
+        
         });
     }
 }

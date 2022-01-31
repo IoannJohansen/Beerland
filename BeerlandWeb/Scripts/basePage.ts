@@ -26,12 +26,8 @@ export default class BasePage {
                 ...this.components,
                 ...this.childPageComponents
             },
-            data: {
-                ...this.pageData
-            },
-            methods: {
-                ...this.pageMethods
-            }
+            data: this.pageData,
+            methods: this.pageMethods
         })
     }
     
