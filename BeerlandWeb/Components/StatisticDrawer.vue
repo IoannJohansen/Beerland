@@ -1,34 +1,42 @@
 ﻿<template>
   <div>
-    <div id="chart"></div>
+    <apexcharts v-if="series[0].data.length!==0" type="bar" height="550" :options="options" :series="series" ></apexcharts>
+    <h2 align="center" class="mt-14" v-else>No data found for this date</h2>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
-import ApexCharts from 'apexcharts';
-
-//TODO: add props with input data
+import VueApexCharts from 'vue-apexcharts';
+import IStatistic from "../Utils/Interfaces/IStatistic";
+import {Prop} from "vue-property-decorator";
 
 @Component({
   name: "Statistic-Drawer",
+  components: {
+    apexcharts: VueApexCharts,
+  }
 })
 export default class StatisticDrawer extends Vue {
-  options = {
-    chart: {
-      type: 'bar',
-      height: "550px",
-    },
-    series: [{
+
+  @Prop({
+    default: [{
       name: 'Target',
-      data: [44, 55, 57, 56, 61, 58, 63, 60, 66, 11, 12]
+      data: []
     }, {
       name: 'Produced',
-      data: [76, 85, 101, 98, 87, 105, 91, 114, 94, 11, 12]
-    }],
+      data: []
+    }]
+  }) readonly series! : Array<IStatistic>
+
+  @Prop({
+    default: []
+  }) readonly categories! : Array<String>
+  
+  options = {
     xaxis: {
-      categories: ["Beer 1", "Beer 2", "Beer 3", "Beer 4", "Beer 5", "Beer 6", "Beer 7", "Beer 8", "Beer 9", , "Beer 10", "Beer 11"]
+      categories: this.categories
     },
     plotOptions: {
       bar: {
@@ -45,10 +53,6 @@ export default class StatisticDrawer extends Vue {
       }
     }
   }
-
-  mounted() {
-    let chart = new ApexCharts(document.querySelector("#chart"), this.options);
-    chart.render();
-  }
+  
 }
 </script>

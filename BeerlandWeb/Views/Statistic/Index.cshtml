@@ -8,7 +8,7 @@
         <Date-picker :date.sync="selectedDate" />
     </div>
     <div class="col-10" >
-        <Statistic-drawer />
+        <Statistic-drawer v-bind:series="series" v-bind:categories="categories" />
     </div>
 </div>
 

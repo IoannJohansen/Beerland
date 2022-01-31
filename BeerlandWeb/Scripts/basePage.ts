@@ -17,6 +17,11 @@ export default class BasePage {
     pageData = {}
     
     pageMethods = {}
+
+    components = {
+        AppBar,
+        AppContainer
+    }
     
     startVueApp(){
         new Vue({
@@ -29,10 +34,5 @@ export default class BasePage {
             data: this.pageData,
             methods: this.pageMethods
         })
-    }
-    
-    components = {
-        AppBar,
-        AppContainer
     }
 }
