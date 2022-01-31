@@ -1,7 +1,6 @@
 ﻿<template>
   <div>
     <apexcharts type="bar" height="550" :series="series" :options="options" ></apexcharts>
-<!--    <h2 align="center" class="mt-14" v-else>No data found for this date</h2>-->
   </div>
 </template>
 
@@ -68,7 +67,6 @@ export default class StatisticDrawer extends Vue {
   }
   
   updated(){
-    console.log("Updated");
     ApexCharts.exec("chart", "updateOptions", {
       xaxis: {
         categories: this.categories

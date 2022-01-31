@@ -31,19 +31,14 @@ export default class StatisticPageApp extends BasePage{
     
     series : Array<IStatistic> = [{
         name: 'Target',
-        data: [1,2,3,4,5,6]
+        data: []
     }, {
         name: 'Produced',
-        data: [6,5,4,3,0,0]
+        data: []
     }]
     
     categories : Array<String> = [
-        "Corona extra 1",
-        "Corona extra 2",
-        "Corona extra 3",
-        "Corona extra 4",
-        "Corona extra 5",
-        "Corona extra 6"
+        
     ]
     
     onDatePickHandler(date : IDate) {
