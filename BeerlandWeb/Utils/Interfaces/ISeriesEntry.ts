@@ -1,4 +1,4 @@
-﻿export default interface IStatistic {
+﻿export default interface ISeriesEntry {
     name : String,
     data : Array<Number>
 }

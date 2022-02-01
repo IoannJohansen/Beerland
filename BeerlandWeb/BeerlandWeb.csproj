@@ -88,7 +88,7 @@
       <TypeScriptCompile Include="Utils\Converters\MonthConverter.ts" />
       <TypeScriptCompile Include="Utils\Enums\EMonth.ts" />
       <TypeScriptCompile Include="Utils\Interfaces\IDate.ts" />
-      <TypeScriptCompile Include="Utils\Interfaces\IStatistic.ts" />
+      <TypeScriptCompile Include="Utils\Interfaces\ISeriesEntry.ts" />
       <TypeScriptCompile Include="Utils\Interfaces\IStatisticViewModel.ts" />
       <TypeScriptCompile Include="Utils\OrderGenerators\RangeGenerator.ts" />
     </ItemGroup>

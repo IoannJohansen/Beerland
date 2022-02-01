@@ -17,7 +17,7 @@ var mapperConfiguration = new MapperConfiguration(opt =>
 var mapper = mapperConfiguration.CreateMapper();
 
 builder.Services.AddSingleton(mapper);
-builder.Services.AddSingleton<ApplicationDbContext>();
+builder.Services.AddTransient<ApplicationDbContext>();
 builder.Services.AddTransient<IStatisticService, StatisticService>();
 
 var app = builder.Build();

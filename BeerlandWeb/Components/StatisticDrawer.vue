@@ -8,7 +8,7 @@
 import Vue from "vue";
 import Component from "vue-class-component";
 import VueApexCharts from 'vue-apexcharts';
-import IStatistic from "../Utils/Interfaces/IStatistic";
+import ISeriesEntry from "../Utils/Interfaces/ISeriesEntry";
 import { Prop } from "vue-property-decorator";
 Vue.use(VueApexCharts);
 
@@ -28,7 +28,7 @@ export default class StatisticDrawer extends Vue {
       name: 'Produced',
       data: []
     }]
-  }) series! : Array<IStatistic>
+  }) series! : Array<ISeriesEntry>
 
   @Prop({
     default: []

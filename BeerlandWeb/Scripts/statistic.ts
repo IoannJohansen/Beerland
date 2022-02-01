@@ -1,9 +1,9 @@
 ﻿import BasePage from "./basePage";
 import DatePicker from "@/DatePicker.vue";
 import StatisticDrawer from "@/StatisticDrawer.vue";
-import IStatistic from "../Utils/Interfaces/IStatistic";
+import ISeriesEntry from "../Utils/Interfaces/ISeriesEntry";
 import IDate from "../Utils/Interfaces/IDate";
-import {getStatisticByDate} from "../Utils/Api/StatisticApi";
+import { getStatisticByDate } from "../Utils/Api/StatisticApi";
 
 export default class StatisticPageApp extends BasePage{
     
@@ -21,6 +21,9 @@ export default class StatisticPageApp extends BasePage{
         this.pageMethods = {
             onDatePickHandler: this.onDatePickHandler
         }
+        this.lifeCycleHooks = {
+            mounted: this.mounted
+        }
     }
 
     selectedDate : IDate = {
@@ -29,7 +32,7 @@ export default class StatisticPageApp extends BasePage{
         Day: new Date().getDate(),
     }
     
-    series : Array<IStatistic> = [{
+    series : Array<ISeriesEntry> = [{
         name: 'Target',
         data: []
     }, {
@@ -66,6 +69,10 @@ export default class StatisticPageApp extends BasePage{
                 console.log("Error status: " + data.status)
             }
         })
+    }
+    
+    mounted(){
+        this.onDatePickHandler(this.selectedDate);
     }
 }
 
