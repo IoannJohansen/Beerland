@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "_Layout";
+}
+
+<v-container class="col-4 mt-10">
+    <h2 align="center">Login</h2>
+    <v-form ref="form">
+        <v-text-field
+            v-model="login"
+            label="login"
+            required
+            >
+        </v-text-field>
+        <v-text-field
+            v-model="password"
+            :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
+            :type="showPassword ? 'text' : 'password'"
+            label="Password"
+            v-on:click:append="showPassword = !showPassword"
+        >
+        </v-text-field>
+        <v-btn depressed
+               align="center"
+               class="mt-3"
+               v-on:click="loginHandler"
+               color="primary"
+               >
+            Login
+            </v-btn>
+    </v-form>
+</v-container>
+
+@section Scripts
+{
+    <script src="@Url.Content("~/dist/login.bundle.js")"></script>
+}

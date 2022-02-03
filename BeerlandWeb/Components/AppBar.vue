@@ -4,7 +4,9 @@
       <a href="/Home/index"><v-btn text>Home</v-btn></a>
       <v-divider inset vertical></v-divider>
       <a href="/Statistic/index"><v-btn text>Statistic</v-btn></a>
-    </v-app-bar>  
+      <v-divider inset vertical></v-divider>
+      <a href="/Auth/index"><v-btn text>Login</v-btn></a>
+    </v-app-bar>
     <v-main>
       <slot/>
     </v-main>
