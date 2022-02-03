@@ -4,6 +4,7 @@ import StatisticDrawer from "@/StatisticDrawer.vue";
 import ISeriesEntry from "../Utils/Interfaces/ISeriesEntry";
 import IDate from "../Utils/Interfaces/IDate";
 import { getStatisticByDate } from "../Utils/Api/StatisticApi";
+import IStatisticViewModel from "../Utils/Interfaces/IStatisticViewModel";
 
 export default class StatisticPageApp extends BasePage{
     
@@ -18,12 +19,15 @@ export default class StatisticPageApp extends BasePage{
             series: this.series,
             categories: this.categories
         }
+        
         this.pageMethods = {
             onDatePickHandler: this.onDatePickHandler
         }
+        
         this.lifeCycleHooks = {
             mounted: this.mounted
         }
+        this.startVueApp();
     }
 
     private selectedDate : IDate = {
@@ -51,10 +55,9 @@ export default class StatisticPageApp extends BasePage{
                     name: 'Produced',
                     data: data.data.map((item)=>item.produced)
                 }];
-                this.categories = [
-                    ...data.data.map((item)=>item.beerMark)   
-                ]
-            } else {
+                this.categories = data.data.map((item)=>item.beerMark)
+            },
+            (data) => {
                 this.series = [{
                     name: 'Target',
                     data: []
@@ -64,8 +67,7 @@ export default class StatisticPageApp extends BasePage{
                 }];
                 this.categories = []
                 console.log("Error status: " + data.status)
-            }
-        })
+            });
     }
     
     private mounted(){
