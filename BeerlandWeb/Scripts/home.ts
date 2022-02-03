@@ -6,8 +6,8 @@ class HomePageApp extends BasePage{
         super({
             
         });
-        
+        this.startVueApp()
     }
 }
 
-new HomePageApp().startVueApp();
+new HomePageApp();

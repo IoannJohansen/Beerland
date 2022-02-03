@@ -34,7 +34,7 @@ export default class StatisticDrawer extends Vue {
     default: []
   }) categories! : Array<String>
   
-  options = {
+  private options = {
     xaxis: {  
       type: "category",
       categories: this.categories
@@ -66,7 +66,7 @@ export default class StatisticDrawer extends Vue {
     }
   }
   
-  updated(){
+  private updated(){
     ApexCharts.exec("chart", "updateOptions", {
       xaxis: {
         categories: this.categories

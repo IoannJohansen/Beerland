@@ -84,6 +84,7 @@
       <TypeScriptCompile Include="Scripts\home.ts" />
       <TypeScriptCompile Include="Scripts\statistic.ts" />
       <TypeScriptCompile Include="Utils\Api\ApiBase.ts" />
+      <TypeScriptCompile Include="Utils\Api\AxiosResponseHandler.ts" />
       <TypeScriptCompile Include="Utils\Api\StatisticApi.ts" />
       <TypeScriptCompile Include="Utils\Converters\MonthConverter.ts" />
       <TypeScriptCompile Include="Utils\Enums\EMonth.ts" />

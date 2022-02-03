@@ -26,13 +26,13 @@ export default class StatisticPageApp extends BasePage{
         }
     }
 
-    selectedDate : IDate = {
+    private selectedDate : IDate = {
         Year: new Date().getFullYear(),
         Month: new Date().getMonth()+1,
         Day: new Date().getDate(),
     }
-    
-    series : Array<ISeriesEntry> = [{
+
+    private series : Array<ISeriesEntry> = [{
         name: 'Target',
         data: []
     }, {
@@ -40,13 +40,10 @@ export default class StatisticPageApp extends BasePage{
         data: []
     }]
     
-    categories : Array<String> = [
-        
-    ]
+    private categories : Array<String> = []
     
-    onDatePickHandler(date : IDate) {
-        getStatisticByDate(date).then(data => {
-            if (data.status===200) {
+    private onDatePickHandler(date : IDate) {
+        getStatisticByDate<Array<IStatisticViewModel>>(date, (data)=>{
                 this.series = [{
                     name: 'Target',
                     data: data.data.map((item)=>item.target)
@@ -71,9 +68,9 @@ export default class StatisticPageApp extends BasePage{
         })
     }
     
-    mounted(){
+    private mounted(){
         this.onDatePickHandler(this.selectedDate);
     }
 }
 
-new StatisticPageApp().startVueApp()
+new StatisticPageApp()
