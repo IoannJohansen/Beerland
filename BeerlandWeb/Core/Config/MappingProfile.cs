@@ -2,7 +2,7 @@
 using BLL.ViewModels;
 using DAL.Entities;
 
-namespace BeerlandWeb.Mapper
+namespace BeerlandWeb.Config
 {
     public class MappingProfile : Profile
     {

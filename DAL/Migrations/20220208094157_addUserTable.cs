@@ -4,7 +4,7 @@
 
 namespace DAL.Migrations
 {
-    public partial class addUserTableMig : Migration
+    public partial class addUserTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,7 @@ namespace DAL.Migrations
                 {
                     Id = table.Column<long>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Login = table.Column<string>(type: "TEXT", nullable: false),
+                    UserName = table.Column<string>(type: "TEXT", nullable: false),
                     HashPassword = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>

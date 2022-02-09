@@ -12,7 +12,7 @@
     "BeerlandWeb": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "home/index",
       "applicationUrl": "https://localhost:7169;http://localhost:5169",
       "environmentVariables": {
