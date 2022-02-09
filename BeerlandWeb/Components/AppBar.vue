@@ -5,7 +5,8 @@
       <v-divider inset vertical></v-divider>
       <a href="/Statistic/index"><v-btn text>Statistic</v-btn></a>
       <v-divider inset vertical></v-divider>
-      <a href="/Auth/index"><v-btn text>Login</v-btn></a>
+      <a v-if="!loggedIn" href="/Auth/index"><v-btn text>Login</v-btn></a>
+      <a v-else><v-btn @click="logout" text>Logout</v-btn></a>
     </v-app-bar>
     <v-main>
       <slot/>
@@ -16,6 +17,7 @@
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
+import {INDEX_PAGE} from "../Utils/Api/ApiBase";
 
 @Component({
   name: "App-Bar"
@@ -23,5 +25,11 @@ import Component from "vue-class-component";
 })
 export default class AppBar extends Vue{
   
+  private loggedIn : boolean = localStorage["jwt"]!==undefined;
+  
+  private logout(){
+    localStorage.removeItem("jwt");
+    window.location.href = INDEX_PAGE;
+  }
 }
 </script>

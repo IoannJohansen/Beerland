@@ -1,6 +1,10 @@
 ﻿import BasePage from "./basePage";
+import AxiosHandler from "../Utils/Api/AxiosHandler";
+import {INDEX_PAGE, LOGIN} from "../Utils/Api/ApiBase";
+import IAuthResponse from "../Utils/Interfaces/IAuthResponse";
+import IAuthRequest from "../Utils/Interfaces/IAuthRequest";
 
-export default class Login extends BasePage{
+export default class Login extends BasePage {
     constructor() {
         super({
             
@@ -9,6 +13,7 @@ export default class Login extends BasePage{
             showPassword: this.showPassword,
             login: this.login,
             password: this.password,
+            showAuthError: this.showAuthError,
         }
         this.pageMethods = {
             loginHandler: this.loginHandler
@@ -18,13 +23,27 @@ export default class Login extends BasePage{
 
     private showPassword: boolean = false
 
-    private login : String =  ''
+    private showAuthError : boolean = false
+    
+    private login : string =  ''
 
-    private password : String =  ''
+    private password : string =  ''
     
     private loginHandler() : void {
-        console.log(`Cred: ${this.login} --- ${this.password}`)
+        AxiosHandler.axiosPost<IAuthRequest>({
+            login: this.login,
+            password: this.password
+        }, LOGIN, (data : IAuthResponse) => {
+            if (data.success){
+                localStorage.setItem("jwt", data.access_token);
+                window.location.href = INDEX_PAGE;
+            }else{
+                this.showAuthError = true;
+            }
+        });
     }
+    
+    
 }
 
 new Login();

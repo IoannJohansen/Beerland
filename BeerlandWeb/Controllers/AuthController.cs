@@ -1,4 +1,6 @@
-﻿using DAL.Entities;
+﻿using BLL.ViewModels;
+using DAL.Entities;
+using IdentityModel.Client;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -9,12 +11,12 @@ namespace BeerlandWeb.Controllers;
 [Route("auth")]
 public class AuthController : Controller
 {
-    private readonly IHttpClientFactory _clientFactory;
+    private readonly IHttpClientFactory _httpClientFactory;
     private readonly UserManager<AppUser> _userManager;
 
-    public AuthController(IHttpClientFactory clientFactory, UserManager<AppUser> userManager)
+    public AuthController(IHttpClientFactory httpClientFactory, UserManager<AppUser> userManager)
     {
-        _clientFactory = clientFactory;
+        _httpClientFactory = httpClientFactory;
         _userManager = userManager;
     }
     
@@ -24,37 +26,23 @@ public class AuthController : Controller
     {
         return View();
     }
-
-    #region Test methods
     
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    [Route("authorized")]
-    [HttpGet]
-    public Task<string> Secured()
+    [HttpPost]
+    [Route("login")]
+    public async Task<LoginResponseViewModel> Login([FromBody]LoginRequestViewModel loginRequestVm)
     {
-        return Task.FromResult("Test");
-    }
-    
-    [Authorize]
-    [Route("unAuthorized")]
-    [HttpGet]
-    public Task<string> NotSecured()
-    {
-        return Task.FromResult("Test");
-    }
-    
-    [Route("testAuth")]
-    [HttpGet]
-    public async Task<string> CreateUser()
-    {
-        var testU = new AppUser()
+        var httpClient = _httpClientFactory.CreateClient();
+        var tokenResponse = await httpClient.RequestPasswordTokenAsync(new PasswordTokenRequest()
         {
-            UserName = "bob1",
+            Address = "https://localhost:7169/connect/token",
+            UserName = loginRequestVm.Login,
+            Password = loginRequestVm.Password,
+            ClientId = "BeerlandClient",
+        });
+        return new LoginResponseViewModel
+        {
+            Success = !tokenResponse.IsError,
+            Access_token = tokenResponse.AccessToken
         };
-        var addPassResult = await _userManager.AddPasswordAsync(testU, "bob");
-        var result = await _userManager.CreateAsync(testU);
-        return "true";
     }
-    
-    #endregion
 }

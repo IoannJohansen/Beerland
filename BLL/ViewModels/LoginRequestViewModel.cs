@@ -1,6 +1,6 @@
 ﻿namespace BLL.ViewModels;
 
-public class LoginViewModel
+public class LoginRequestViewModel
 {
     public string Login { get; set; }
 

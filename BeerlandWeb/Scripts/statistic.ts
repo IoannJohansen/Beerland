@@ -51,7 +51,7 @@ export default class StatisticPageApp extends BasePage{
         const requestParam = {
             date: `${date.Year}.${date.Month}.${date.Day}`
         }
-        AxiosHandler.axiosGet<Object, Array<IStatisticViewModel>>(requestParam, GET_STAT_BY_DATE, (data : Array<IStatisticViewModel>)=>{
+        AxiosHandler.axiosGet<Object>(requestParam, GET_STAT_BY_DATE, (data : Array<IStatisticViewModel>)=>{
             this.series = [{
                 name: 'Target',
                 data: data.map((item)=>item.target)

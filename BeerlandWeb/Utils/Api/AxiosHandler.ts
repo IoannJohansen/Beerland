@@ -1,8 +1,8 @@
-﻿import axios, {AxiosResponse} from "axios";
+﻿import axios, { AxiosResponse } from "axios";
 
-export default  class AxiosHandler {
-    static axiosGet = async <I, O>(data : I, url : string, onSuccess : Function, onFail? : Function) => {
-        const response = await axios.get<AxiosResponse<O>>(url, {
+export default class AxiosHandler {
+    static axiosGet = async <I>(data : I, url : string, onSuccess : Function, onFail? : Function) => {
+        const response = await axios.get<AxiosResponse>(url, {
             params:{
                 ...data,
             }
@@ -17,8 +17,8 @@ export default  class AxiosHandler {
         }
     }
 
-    static axiosPost = async <I, O>(data : I, url : string, onSuccess : Function, onFail? : Function) => {
-        const response = await axios.post<AxiosResponse<O>>(url, {
+    static axiosPost = async <I>(data : I, url : string, onSuccess : Function, onFail? : Function) => {
+        const response = await axios.post<AxiosResponse>(url, {
             ...data,
         });
         if (response.status === 200){

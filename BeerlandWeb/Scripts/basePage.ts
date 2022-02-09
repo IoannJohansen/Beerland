@@ -16,7 +16,7 @@ export default class BasePage {
     protected pageMethods = {}
 
     protected lifeCycleHooks = {}
-
+    
     private components = {
         AppBar,
         AppContainer
@@ -34,5 +34,6 @@ export default class BasePage {
             methods: this.pageMethods,
             ...this.lifeCycleHooks
         })
+        
     }
 }
