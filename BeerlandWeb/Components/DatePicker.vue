@@ -51,31 +51,31 @@ const moment = require('moment');
 })
 export default class DatePicker extends Vue {
   
-  years : Number[] = [...reverseRange(new Date().getFullYear(), new Date().getFullYear()-100)]
-  
-  months : String[] = [...eMonthToArray()]
-  
-  selectedYear : Number = new Date().getFullYear()
+  private years : Number[] = [...reverseRange(new Date().getFullYear(), new Date().getFullYear()-100)]
 
-  selectedMonth : String = numToMonth(new Date().getMonth()+1)
+  private months : String[] = [...eMonthToArray()]
 
-  selectedDay : Number = new Date().getDate()
-  
-  days : Number[] = [...range(1, moment(`${this.selectedYear}-${this.addPrefixToNum(monthToNum(this.selectedMonth), 2)}`, "YYYY-MM").daysInMonth()+1)]
-  
-  changeDate(assignToOutputDate : Function) : void {
+  private selectedYear : Number = new Date().getFullYear()
+
+  private selectedMonth : String = numToMonth(new Date().getMonth()+1)
+
+  private selectedDay : Number = new Date().getDate()
+
+  private days : Number[] = [...range(1, moment(`${this.selectedYear}-${this.addPrefixToNum(monthToNum(this.selectedMonth), 2)}`, "YYYY-MM").daysInMonth()+1)]
+
+  private changeDate(assignToOutputDate : Function) : void {
     this.days = [...range(1, moment(`${this.selectedYear}-${this.addPrefixToNum(monthToNum(this.selectedMonth), 2)}`, "YYYY-MM").daysInMonth()+1)]
     this.selectedDay = 1;
     assignToOutputDate();
   }
-  
-  addPrefixToNum(number, requiredSize) : String {
+
+  private addPrefixToNum(number, requiredSize) : String {
     let s = number + "";
     while (s.length < requiredSize) s = "0" + s;
     return s;
   }
 
-  emitDatePick(){
+  private emitDatePick(){
     this.$emit('pick',{
       Year : this.selectedYear,
       Month : monthToNum(this.selectedMonth),

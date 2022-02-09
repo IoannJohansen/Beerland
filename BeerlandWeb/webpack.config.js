@@ -5,7 +5,8 @@ module.exports = {
   mode: "development",
   entry: {
     statistic: "./Scripts/statistic.ts",
-    home: "./Scripts/home.ts"
+    home: "./Scripts/home.ts",
+    login: "./Scripts/login.ts",
   },
   output: {
     path: path.resolve(__dirname, "./wwwroot/dist"),

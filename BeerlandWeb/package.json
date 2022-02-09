@@ -30,7 +30,7 @@
   },
   "main": "./Scipts/home.ts",
   "scripts": {
-    "dev": "webpack --watch --hot --progress --no-stats",
+    "dev": "webpack --watch --hot --progress",
     "build": "webpack"
   },
   "author": "",

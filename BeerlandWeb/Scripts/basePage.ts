@@ -9,20 +9,20 @@ export default class BasePage {
         this.childPageComponents = childPageComponents;
     }
     
-    childPageComponents = {}
-    
-    pageData = {}
-    
-    pageMethods = {}
+    protected childPageComponents = {}
 
-    lifeCycleHooks = {}
+    protected pageData = {}
+
+    protected pageMethods = {}
+
+    protected lifeCycleHooks = {}
     
-    components = {
+    private components = {
         AppBar,
         AppContainer
     }
     
-    startVueApp(){
+    protected startVueApp(){
         new Vue({
             vuetify,
             el: "#app",
@@ -34,5 +34,6 @@ export default class BasePage {
             methods: this.pageMethods,
             ...this.lifeCycleHooks
         })
+        
     }
 }
