@@ -66,7 +66,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("DAL.Entities.BeerMark", b =>
@@ -81,7 +81,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BeerMarks");
+                    b.ToTable("BeerMarks", (string)null);
                 });
 
             modelBuilder.Entity("DAL.Entities.ProductionStatistic", b =>
@@ -106,7 +106,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("BeerMarkId");
 
-                    b.ToTable("ProductionStatictics");
+                    b.ToTable("ProductionStatictics", (string)null);
                 });
 
             modelBuilder.Entity("DAL.Entities.ProductionStatistic", b =>

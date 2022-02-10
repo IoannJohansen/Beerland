@@ -1,6 +1,7 @@
 using AutoMapper;
 using BeerlandWeb.Config;
 using BeerlandWeb.Core;
+using BeerlandWeb.Core.Config;
 using BLL.Interfaces;
 using BLL.Services;
 using DAL;
@@ -38,7 +39,8 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
     options.Password.RequireUppercase = false;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequiredLength = 3;
-}).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+}).AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
 
 builder.Services.AddIdentityServer()
     .AddAspNetIdentity<AppUser>()

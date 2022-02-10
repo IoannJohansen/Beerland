@@ -4,4 +4,5 @@ namespace DAL.Entities;
 
 public class AppUser : IdentityUser
 {
+    
 }

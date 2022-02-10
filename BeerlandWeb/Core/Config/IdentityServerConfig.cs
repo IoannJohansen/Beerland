@@ -2,7 +2,7 @@
 using IdentityServer4;
 using IdentityServer4.Models;
 
-namespace BeerlandWeb.Config;
+namespace BeerlandWeb.Core.Config;
 
 public static class IdentityServerConfig
 {
@@ -43,7 +43,7 @@ public static class IdentityServerConfig
                 AllowedScopes =
                 {
                     "BeerlandApi",
-                    IdentityServerConstants.StandardScopes.Profile
+                    // IdentityServerConstants.StandardScopes.Profile
                 },
                 AllowOfflineAccess = true,
             }

@@ -1,5 +1,7 @@
-﻿using BLL.ViewModels;
+﻿using System.Security.Claims;
+using BLL.ViewModels;
 using DAL.Entities;
+using IdentityModel;
 using IdentityModel.Client;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -32,7 +34,7 @@ public class AuthController : Controller
     public async Task<LoginResponseViewModel> Login([FromBody]LoginRequestViewModel loginRequestVm)
     {
         var httpClient = _httpClientFactory.CreateClient();
-        var tokenResponse = await httpClient.RequestPasswordTokenAsync(new PasswordTokenRequest()
+        var tokenResponse = await httpClient.RequestPasswordTokenAsync(new PasswordTokenRequest
         {
             Address = "https://localhost:7169/connect/token",
             UserName = loginRequestVm.Login,
@@ -44,5 +46,15 @@ public class AuthController : Controller
             Success = !tokenResponse.IsError,
             Access_token = tokenResponse.AccessToken
         };
+    }
+
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme/*, Roles = "Admin"*/)]
+    [HttpGet]
+    [Route("test")]
+    public string Test()
+    {
+        // var n = await _userManager.FindByNameAsync("test1");
+        // await _userManager.AddClaimAsync(n, new Claim(JwtClaimTypes.Role, "Admin"));
+        return "Test";
     }
 }

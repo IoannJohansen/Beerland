@@ -6,7 +6,7 @@
       <a href="/Statistic/index"><v-btn text>Statistic</v-btn></a>
       <v-divider inset vertical></v-divider>
       <a v-if="!loggedIn" href="/Auth/index"><v-btn text>Login</v-btn></a>
-      <a v-else><v-btn @click="logout" text>Logout</v-btn></a>
+      <a v-else><v-btn class="red--text" @click="logout" text>Logout</v-btn></a>
     </v-app-bar>
     <v-main>
       <slot/>
@@ -33,3 +33,10 @@ export default class AppBar extends Vue{
   }
 }
 </script>
+
+<style scoped>
+  a {
+    text-decoration: none;
+  }
+
+</style>

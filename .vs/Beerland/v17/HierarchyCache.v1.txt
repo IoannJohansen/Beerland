@@ -1,0 +1,1281 @@
+﻿++Solution 'Beerland' ‎(3 of 3 projects)
+i:{00000000-0000-0000-0000-000000000000}:Beerland.sln
+++BeerlandWeb
+i:{00000000-0000-0000-0000-000000000000}:BeerlandWeb
+++Connected Services 
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:>34972
+++Dependencies
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:>34971
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:>17578
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:>17579
+++Properties
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\properties\
+++wwwroot
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\
+++Components
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\components\
+++AppBar.vue
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\components\appbar.vue
+++AppContainer.vue
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\components\appcontainer.vue
+++DatePicker.vue
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\components\datepicker.vue
+++StatisticDrawer.vue
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\components\statisticdrawer.vue
+++Config
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\config\
+++IdentityServerConfig.cs
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\config\identityserverconfig.cs
+++MappingProfile.cs
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\config\mappingprofile.cs
+++TestUsers.cs
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\config\testusers.cs
+++Controllers
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\controllers\
+++Plugins
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\plugins\
+++vuetify.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\plugins\vuetify.js
+++Scripts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\scripts\
+++basePage.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\scripts\basepage.ts
+++home.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\scripts\home.ts
+++login.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\scripts\login.ts
+++statistic.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\scripts\statistic.ts
+++Utils
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\
+++Api
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\api\
+++ApiBase.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\api\apibase.ts
+++AxiosHandler.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\api\axioshandler.ts
+++Converters
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\converters\
+++Enums
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\enums\
+++Interfaces
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\interfaces\
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\bll\interfaces\
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\repositories\interfaces\
+++OrderGenerators
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\ordergenerators\
+++Views
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\views\
+++Auth
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\views\auth\
+++Index.cshtml
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\views\auth\index.cshtml
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\views\home\index.cshtml
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\views\statistic\index.cshtml
+++Home
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\views\home\
+++Shared
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\views\shared\
+++Statistic
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\views\statistic\
+++.gitignore
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\.gitignore
+++appsettings.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\appsettings.json
+++d.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\d.ts
+++package.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\package.json
+++Program.cs
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\program.cs
+++tempkey.jwk
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\tempkey.jwk
+++tsconfig.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\tsconfig.json
+++webpack.config.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\webpack.config.js
+++No service dependencies discovered
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:>34973
+++Analyzers
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:analyzers
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:analyzers
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:analyzers
+++Frameworks
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:frameworks
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:frameworks
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:frameworks
+++Packages
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:packages
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:packages
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:packages
+++Projects
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:projects
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:projects
+++launchSettings.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\properties\launchsettings.json
+++dist
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\
+++favicon.ico
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\favicon.ico
+++AuthController.cs
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\controllers\authcontroller.cs
+++HomeController.cs
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\controllers\homecontroller.cs
+++StatisticController.cs
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\controllers\statisticcontroller.cs
+++MonthConverter.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\converters\monthconverter.ts
+++EMonth.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\enums\emonth.ts
+++IDate.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\interfaces\idate.ts
+++ISeriesEntry.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\interfaces\iseriesentry.ts
+++IStatisticViewModel.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\interfaces\istatisticviewmodel.ts
+++RangeGenerator.ts
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\utils\ordergenerators\rangegenerator.ts
+++_Layout.cshtml
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\views\shared\_layout.cshtml
+++appsettings.Development.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\appsettings.development.json
+++package-lock.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\package-lock.json
+++Microsoft.AspNetCore.Analyzers
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\microsoft.netcore.app
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\bll\microsoft.netcore.app
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\microsoft.netcore.app
+++IdentityServer4 (4.1.2)
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:>35009
+++IdentityServer4.EntityFramework (4.1.2)
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:>35006
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:>34990
+++Microsoft.AspNetCore.Authentication.JwtBearer (6.0.1)
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:>35007
+++Microsoft.EntityFrameworkCore.Design (6.0.1)
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:>35004
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:>34988
+++Microsoft.EntityFrameworkCore.Tools (6.0.1)
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:>35008
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:>34991
+++Serilog.AspNetCore (4.1.1-dev-00250)
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:>35005
+++BLL
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\bll\bll.csproj
+i:{00000000-0000-0000-0000-000000000000}:BLL
+++home.008948e66038535fd02f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.008948e66038535fd02f.hot-update.js
+++home.008948e66038535fd02f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.008948e66038535fd02f.hot-update.json
+++home.01ae72e3532ee69e9f8c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.01ae72e3532ee69e9f8c.hot-update.js
+++home.01ae72e3532ee69e9f8c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.01ae72e3532ee69e9f8c.hot-update.json
+++home.07904f902aa6c0aabc11.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.07904f902aa6c0aabc11.hot-update.js
+++home.07904f902aa6c0aabc11.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.07904f902aa6c0aabc11.hot-update.json
+++home.07f76c346d4e91a431de.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.07f76c346d4e91a431de.hot-update.js
+++home.07f76c346d4e91a431de.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.07f76c346d4e91a431de.hot-update.json
+++home.0a36622ec8de07983a2d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.0a36622ec8de07983a2d.hot-update.js
+++home.0a36622ec8de07983a2d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.0a36622ec8de07983a2d.hot-update.json
+++home.0e6f6cbe6d0faa43babd.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.0e6f6cbe6d0faa43babd.hot-update.js
+++home.0e6f6cbe6d0faa43babd.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.0e6f6cbe6d0faa43babd.hot-update.json
+++home.1238bad84f49113226ff.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.1238bad84f49113226ff.hot-update.js
+++home.1238bad84f49113226ff.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.1238bad84f49113226ff.hot-update.json
+++home.138a89ed176f4e216e8c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.138a89ed176f4e216e8c.hot-update.js
+++home.138a89ed176f4e216e8c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.138a89ed176f4e216e8c.hot-update.json
+++home.14fdd6b13ffa48461c82.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.14fdd6b13ffa48461c82.hot-update.js
+++home.14fdd6b13ffa48461c82.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.14fdd6b13ffa48461c82.hot-update.json
+++home.1a955ba2692acab3afdd.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.1a955ba2692acab3afdd.hot-update.js
+++home.1a955ba2692acab3afdd.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.1a955ba2692acab3afdd.hot-update.json
+++home.1d548883c917a57a3cee.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.1d548883c917a57a3cee.hot-update.js
+++home.1d548883c917a57a3cee.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.1d548883c917a57a3cee.hot-update.json
+++home.22a7dcac10fc3ffccbf0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.22a7dcac10fc3ffccbf0.hot-update.js
+++home.22a7dcac10fc3ffccbf0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.22a7dcac10fc3ffccbf0.hot-update.json
+++home.283390e65a1b7315e13c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.283390e65a1b7315e13c.hot-update.js
+++home.283390e65a1b7315e13c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.283390e65a1b7315e13c.hot-update.json
+++home.2927f9751f181b1a2d74.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.2927f9751f181b1a2d74.hot-update.js
+++home.2927f9751f181b1a2d74.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.2927f9751f181b1a2d74.hot-update.json
+++home.2a6b5ae6e4bc6e027d06.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.2a6b5ae6e4bc6e027d06.hot-update.js
+++home.2a6b5ae6e4bc6e027d06.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.2a6b5ae6e4bc6e027d06.hot-update.json
+++home.2db1066c7e47d13b729d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.2db1066c7e47d13b729d.hot-update.js
+++home.2db1066c7e47d13b729d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.2db1066c7e47d13b729d.hot-update.json
+++home.3902fc6ca1a238a4c656.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.3902fc6ca1a238a4c656.hot-update.js
+++home.3902fc6ca1a238a4c656.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.3902fc6ca1a238a4c656.hot-update.json
+++home.39f777a2cf4ba1ddcd73.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.39f777a2cf4ba1ddcd73.hot-update.js
+++home.39f777a2cf4ba1ddcd73.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.39f777a2cf4ba1ddcd73.hot-update.json
+++home.3a5f37522745a6959861.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.3a5f37522745a6959861.hot-update.js
+++home.3a5f37522745a6959861.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.3a5f37522745a6959861.hot-update.json
+++home.3dccdf647e707bdded87.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.3dccdf647e707bdded87.hot-update.js
+++home.3dccdf647e707bdded87.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.3dccdf647e707bdded87.hot-update.json
+++home.3f5b0d7c5d764b80514c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.3f5b0d7c5d764b80514c.hot-update.js
+++home.3f5b0d7c5d764b80514c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.3f5b0d7c5d764b80514c.hot-update.json
+++home.40f218c75adcc334b625.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.40f218c75adcc334b625.hot-update.js
+++home.40f218c75adcc334b625.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.40f218c75adcc334b625.hot-update.json
+++home.42977b3f6b0f4a19be4d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.42977b3f6b0f4a19be4d.hot-update.js
+++home.42977b3f6b0f4a19be4d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.42977b3f6b0f4a19be4d.hot-update.json
+++home.42c99fc24701ca25e971.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.42c99fc24701ca25e971.hot-update.js
+++home.42c99fc24701ca25e971.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.42c99fc24701ca25e971.hot-update.json
+++home.44965fe9647e1ba9ed74.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.44965fe9647e1ba9ed74.hot-update.js
+++home.44965fe9647e1ba9ed74.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.44965fe9647e1ba9ed74.hot-update.json
+++home.469bba90ae06a9b3761d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.469bba90ae06a9b3761d.hot-update.js
+++home.469bba90ae06a9b3761d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.469bba90ae06a9b3761d.hot-update.json
+++home.47c1998b7fc0d41f0310.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.47c1998b7fc0d41f0310.hot-update.js
+++home.47c1998b7fc0d41f0310.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.47c1998b7fc0d41f0310.hot-update.json
+++home.4d0f0655733a25fd6cb6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.4d0f0655733a25fd6cb6.hot-update.js
+++home.4d0f0655733a25fd6cb6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.4d0f0655733a25fd6cb6.hot-update.json
+++home.5298bfbdc5c9331949e0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.5298bfbdc5c9331949e0.hot-update.js
+++home.5298bfbdc5c9331949e0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.5298bfbdc5c9331949e0.hot-update.json
+++home.58304ac122d5f8f3eb8c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.58304ac122d5f8f3eb8c.hot-update.js
+++home.58304ac122d5f8f3eb8c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.58304ac122d5f8f3eb8c.hot-update.json
+++home.59758b851b0435b5206b.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.59758b851b0435b5206b.hot-update.js
+++home.59758b851b0435b5206b.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.59758b851b0435b5206b.hot-update.json
+++home.5bd37e857646e698bd51.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.5bd37e857646e698bd51.hot-update.js
+++home.5bd37e857646e698bd51.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.5bd37e857646e698bd51.hot-update.json
+++home.5d5db7f0c19b5baa5f94.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.5d5db7f0c19b5baa5f94.hot-update.js
+++home.5d5db7f0c19b5baa5f94.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.5d5db7f0c19b5baa5f94.hot-update.json
+++home.61745db6113ebd365d66.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.61745db6113ebd365d66.hot-update.js
+++home.61745db6113ebd365d66.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.61745db6113ebd365d66.hot-update.json
+++home.6213e200f92cfee32ec0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.6213e200f92cfee32ec0.hot-update.js
+++home.6213e200f92cfee32ec0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.6213e200f92cfee32ec0.hot-update.json
+++home.645fb5d00ebc7ac9f610.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.645fb5d00ebc7ac9f610.hot-update.js
+++home.645fb5d00ebc7ac9f610.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.645fb5d00ebc7ac9f610.hot-update.json
+++home.688f578d3b5153520f25.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.688f578d3b5153520f25.hot-update.js
+++home.688f578d3b5153520f25.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.688f578d3b5153520f25.hot-update.json
+++home.6aa94698ec09b49da122.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.6aa94698ec09b49da122.hot-update.js
+++home.6aa94698ec09b49da122.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.6aa94698ec09b49da122.hot-update.json
+++home.6fae9e09c7385858146d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.6fae9e09c7385858146d.hot-update.js
+++home.6fae9e09c7385858146d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.6fae9e09c7385858146d.hot-update.json
+++home.70b097b77e75adfabfb3.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.70b097b77e75adfabfb3.hot-update.js
+++home.70b097b77e75adfabfb3.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.70b097b77e75adfabfb3.hot-update.json
+++home.71762fcee669c5c587c4.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.71762fcee669c5c587c4.hot-update.js
+++home.71762fcee669c5c587c4.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.71762fcee669c5c587c4.hot-update.json
+++home.7179be7a48379b916022.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7179be7a48379b916022.hot-update.js
+++home.7179be7a48379b916022.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7179be7a48379b916022.hot-update.json
+++home.71f694746cd5598350e9.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.71f694746cd5598350e9.hot-update.js
+++home.71f694746cd5598350e9.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.71f694746cd5598350e9.hot-update.json
+++home.7298537adebbadaf391b.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7298537adebbadaf391b.hot-update.js
+++home.7298537adebbadaf391b.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7298537adebbadaf391b.hot-update.json
+++home.7497e87e96ba93e0a2da.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7497e87e96ba93e0a2da.hot-update.js
+++home.7497e87e96ba93e0a2da.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7497e87e96ba93e0a2da.hot-update.json
+++home.7a4240bc8d868d3a4e49.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7a4240bc8d868d3a4e49.hot-update.js
+++home.7a4240bc8d868d3a4e49.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7a4240bc8d868d3a4e49.hot-update.json
+++home.7b571218c58d34c83558.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7b571218c58d34c83558.hot-update.js
+++home.7b571218c58d34c83558.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7b571218c58d34c83558.hot-update.json
+++home.7d9c59698301d91684fa.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7d9c59698301d91684fa.hot-update.js
+++home.7d9c59698301d91684fa.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.7d9c59698301d91684fa.hot-update.json
+++home.85990c165bbb643b5057.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.85990c165bbb643b5057.hot-update.js
+++home.85990c165bbb643b5057.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.85990c165bbb643b5057.hot-update.json
+++home.8d0dde9a02d7ce70465f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.8d0dde9a02d7ce70465f.hot-update.js
+++home.8d0dde9a02d7ce70465f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.8d0dde9a02d7ce70465f.hot-update.json
+++home.90ccb8e6c68aa0430936.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.90ccb8e6c68aa0430936.hot-update.js
+++home.90ccb8e6c68aa0430936.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.90ccb8e6c68aa0430936.hot-update.json
+++home.927d1f23960dc7cc56ec.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.927d1f23960dc7cc56ec.hot-update.js
+++home.927d1f23960dc7cc56ec.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.927d1f23960dc7cc56ec.hot-update.json
+++home.968dc090135b53e970be.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.968dc090135b53e970be.hot-update.js
+++home.968dc090135b53e970be.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.968dc090135b53e970be.hot-update.json
+++home.9aca0c1298b758d0f7f3.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.9aca0c1298b758d0f7f3.hot-update.js
+++home.9aca0c1298b758d0f7f3.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.9aca0c1298b758d0f7f3.hot-update.json
+++home.9caf108a99c90aab3af9.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.9caf108a99c90aab3af9.hot-update.js
+++home.9caf108a99c90aab3af9.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.9caf108a99c90aab3af9.hot-update.json
+++home.9cd4dbacdd7125bada93.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.9cd4dbacdd7125bada93.hot-update.js
+++home.9cd4dbacdd7125bada93.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.9cd4dbacdd7125bada93.hot-update.json
+++home.a11b79572cff427012e2.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.a11b79572cff427012e2.hot-update.js
+++home.a11b79572cff427012e2.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.a11b79572cff427012e2.hot-update.json
+++home.a21963b9796244942d74.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.a21963b9796244942d74.hot-update.js
+++home.a21963b9796244942d74.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.a21963b9796244942d74.hot-update.json
+++home.a3c8ce7ba906ee5ab9e7.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.a3c8ce7ba906ee5ab9e7.hot-update.js
+++home.a3c8ce7ba906ee5ab9e7.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.a3c8ce7ba906ee5ab9e7.hot-update.json
+++home.a4ff2591e358c32c7ba6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.a4ff2591e358c32c7ba6.hot-update.js
+++home.a4ff2591e358c32c7ba6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.a4ff2591e358c32c7ba6.hot-update.json
+++home.ac664fd35cb7b727056f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.ac664fd35cb7b727056f.hot-update.js
+++home.ac664fd35cb7b727056f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.ac664fd35cb7b727056f.hot-update.json
+++home.af1389b7c3a073b9d70f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.af1389b7c3a073b9d70f.hot-update.js
+++home.af1389b7c3a073b9d70f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.af1389b7c3a073b9d70f.hot-update.json
+++home.be92f3b1a75c3dfbfe19.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.be92f3b1a75c3dfbfe19.hot-update.js
+++home.be92f3b1a75c3dfbfe19.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.be92f3b1a75c3dfbfe19.hot-update.json
+++home.bundle.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.bundle.js
+++home.c1ade2e7c3b44404996f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.c1ade2e7c3b44404996f.hot-update.js
+++home.c1ade2e7c3b44404996f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.c1ade2e7c3b44404996f.hot-update.json
+++home.c3ae9099ce9dced147f0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.c3ae9099ce9dced147f0.hot-update.js
+++home.c3ae9099ce9dced147f0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.c3ae9099ce9dced147f0.hot-update.json
+++home.c4c194cce6dfd7a15513.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.c4c194cce6dfd7a15513.hot-update.js
+++home.c4c194cce6dfd7a15513.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.c4c194cce6dfd7a15513.hot-update.json
+++home.c800d12443e0f41a6e13.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.c800d12443e0f41a6e13.hot-update.js
+++home.c800d12443e0f41a6e13.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.c800d12443e0f41a6e13.hot-update.json
+++home.cc1dfe1386a707434a42.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.cc1dfe1386a707434a42.hot-update.js
+++home.cc1dfe1386a707434a42.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.cc1dfe1386a707434a42.hot-update.json
+++home.cce0ad3ec813951ea3ff.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.cce0ad3ec813951ea3ff.hot-update.js
+++home.cce0ad3ec813951ea3ff.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.cce0ad3ec813951ea3ff.hot-update.json
+++home.d58d7acc6b6f999f42e6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.d58d7acc6b6f999f42e6.hot-update.js
+++home.d58d7acc6b6f999f42e6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.d58d7acc6b6f999f42e6.hot-update.json
+++home.d67f07955685575053ef.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.d67f07955685575053ef.hot-update.js
+++home.d67f07955685575053ef.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.d67f07955685575053ef.hot-update.json
+++home.d80d7845bbb47f415764.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.d80d7845bbb47f415764.hot-update.js
+++home.d80d7845bbb47f415764.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.d80d7845bbb47f415764.hot-update.json
+++home.d8f896bb7e3765300676.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.d8f896bb7e3765300676.hot-update.js
+++home.d8f896bb7e3765300676.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.d8f896bb7e3765300676.hot-update.json
+++home.e05b8a2a423ac67307a1.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.e05b8a2a423ac67307a1.hot-update.js
+++home.e05b8a2a423ac67307a1.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.e05b8a2a423ac67307a1.hot-update.json
+++home.e2899873075f8989c5bd.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.e2899873075f8989c5bd.hot-update.js
+++home.e2899873075f8989c5bd.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.e2899873075f8989c5bd.hot-update.json
+++home.e5b62fe9948f2ff93662.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.e5b62fe9948f2ff93662.hot-update.js
+++home.e5b62fe9948f2ff93662.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.e5b62fe9948f2ff93662.hot-update.json
+++home.e60e9c3ddb804334b8ee.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.e60e9c3ddb804334b8ee.hot-update.js
+++home.e60e9c3ddb804334b8ee.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.e60e9c3ddb804334b8ee.hot-update.json
+++home.eb0c96bd60270a747b41.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.eb0c96bd60270a747b41.hot-update.js
+++home.eb0c96bd60270a747b41.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.eb0c96bd60270a747b41.hot-update.json
+++home.ec1b633b46368e9bfdb6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.ec1b633b46368e9bfdb6.hot-update.js
+++home.ec1b633b46368e9bfdb6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.ec1b633b46368e9bfdb6.hot-update.json
+++home.f153f091cf3d02d250ba.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.f153f091cf3d02d250ba.hot-update.js
+++home.f153f091cf3d02d250ba.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.f153f091cf3d02d250ba.hot-update.json
+++home.f9697212277caad684ed.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.f9697212277caad684ed.hot-update.js
+++home.f9697212277caad684ed.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.f9697212277caad684ed.hot-update.json
+++home.fd21024e9bf0a76b2e82.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.fd21024e9bf0a76b2e82.hot-update.js
+++home.fd21024e9bf0a76b2e82.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\home.fd21024e9bf0a76b2e82.hot-update.json
+++login.008948e66038535fd02f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.008948e66038535fd02f.hot-update.js
+++login.008948e66038535fd02f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.008948e66038535fd02f.hot-update.json
+++login.01ae72e3532ee69e9f8c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.01ae72e3532ee69e9f8c.hot-update.js
+++login.01ae72e3532ee69e9f8c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.01ae72e3532ee69e9f8c.hot-update.json
+++login.07904f902aa6c0aabc11.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.07904f902aa6c0aabc11.hot-update.js
+++login.07904f902aa6c0aabc11.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.07904f902aa6c0aabc11.hot-update.json
+++login.07f76c346d4e91a431de.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.07f76c346d4e91a431de.hot-update.js
+++login.07f76c346d4e91a431de.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.07f76c346d4e91a431de.hot-update.json
+++login.0a36622ec8de07983a2d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.0a36622ec8de07983a2d.hot-update.js
+++login.0a36622ec8de07983a2d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.0a36622ec8de07983a2d.hot-update.json
+++login.0e6f6cbe6d0faa43babd.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.0e6f6cbe6d0faa43babd.hot-update.js
+++login.0e6f6cbe6d0faa43babd.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.0e6f6cbe6d0faa43babd.hot-update.json
+++login.1238bad84f49113226ff.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.1238bad84f49113226ff.hot-update.js
+++login.1238bad84f49113226ff.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.1238bad84f49113226ff.hot-update.json
+++login.138a89ed176f4e216e8c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.138a89ed176f4e216e8c.hot-update.js
+++login.138a89ed176f4e216e8c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.138a89ed176f4e216e8c.hot-update.json
+++login.14fdd6b13ffa48461c82.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.14fdd6b13ffa48461c82.hot-update.js
+++login.14fdd6b13ffa48461c82.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.14fdd6b13ffa48461c82.hot-update.json
+++login.1a955ba2692acab3afdd.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.1a955ba2692acab3afdd.hot-update.js
+++login.1a955ba2692acab3afdd.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.1a955ba2692acab3afdd.hot-update.json
+++login.1d548883c917a57a3cee.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.1d548883c917a57a3cee.hot-update.js
+++login.1d548883c917a57a3cee.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.1d548883c917a57a3cee.hot-update.json
+++login.22a7dcac10fc3ffccbf0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.22a7dcac10fc3ffccbf0.hot-update.js
+++login.22a7dcac10fc3ffccbf0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.22a7dcac10fc3ffccbf0.hot-update.json
+++login.283390e65a1b7315e13c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.283390e65a1b7315e13c.hot-update.js
+++login.283390e65a1b7315e13c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.283390e65a1b7315e13c.hot-update.json
+++login.2927f9751f181b1a2d74.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.2927f9751f181b1a2d74.hot-update.js
+++login.2927f9751f181b1a2d74.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.2927f9751f181b1a2d74.hot-update.json
+++login.2a6b5ae6e4bc6e027d06.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.2a6b5ae6e4bc6e027d06.hot-update.js
+++login.2a6b5ae6e4bc6e027d06.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.2a6b5ae6e4bc6e027d06.hot-update.json
+++login.2db1066c7e47d13b729d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.2db1066c7e47d13b729d.hot-update.js
+++login.2db1066c7e47d13b729d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.2db1066c7e47d13b729d.hot-update.json
+++login.3902fc6ca1a238a4c656.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.3902fc6ca1a238a4c656.hot-update.js
+++login.3902fc6ca1a238a4c656.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.3902fc6ca1a238a4c656.hot-update.json
+++login.39f777a2cf4ba1ddcd73.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.39f777a2cf4ba1ddcd73.hot-update.js
+++login.39f777a2cf4ba1ddcd73.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.39f777a2cf4ba1ddcd73.hot-update.json
+++login.3a5f37522745a6959861.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.3a5f37522745a6959861.hot-update.js
+++login.3a5f37522745a6959861.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.3a5f37522745a6959861.hot-update.json
+++login.3dccdf647e707bdded87.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.3dccdf647e707bdded87.hot-update.js
+++login.3dccdf647e707bdded87.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.3dccdf647e707bdded87.hot-update.json
+++login.3f5b0d7c5d764b80514c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.3f5b0d7c5d764b80514c.hot-update.js
+++login.3f5b0d7c5d764b80514c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.3f5b0d7c5d764b80514c.hot-update.json
+++login.40f218c75adcc334b625.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.40f218c75adcc334b625.hot-update.js
+++login.40f218c75adcc334b625.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.40f218c75adcc334b625.hot-update.json
+++login.42977b3f6b0f4a19be4d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.42977b3f6b0f4a19be4d.hot-update.js
+++login.42977b3f6b0f4a19be4d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.42977b3f6b0f4a19be4d.hot-update.json
+++login.42c99fc24701ca25e971.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.42c99fc24701ca25e971.hot-update.js
+++login.42c99fc24701ca25e971.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.42c99fc24701ca25e971.hot-update.json
+++login.44965fe9647e1ba9ed74.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.44965fe9647e1ba9ed74.hot-update.js
+++login.44965fe9647e1ba9ed74.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.44965fe9647e1ba9ed74.hot-update.json
+++login.469bba90ae06a9b3761d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.469bba90ae06a9b3761d.hot-update.js
+++login.469bba90ae06a9b3761d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.469bba90ae06a9b3761d.hot-update.json
+++login.47c1998b7fc0d41f0310.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.47c1998b7fc0d41f0310.hot-update.js
+++login.47c1998b7fc0d41f0310.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.47c1998b7fc0d41f0310.hot-update.json
+++login.4d0f0655733a25fd6cb6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.4d0f0655733a25fd6cb6.hot-update.js
+++login.4d0f0655733a25fd6cb6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.4d0f0655733a25fd6cb6.hot-update.json
+++login.5298bfbdc5c9331949e0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.5298bfbdc5c9331949e0.hot-update.js
+++login.5298bfbdc5c9331949e0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.5298bfbdc5c9331949e0.hot-update.json
+++login.58304ac122d5f8f3eb8c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.58304ac122d5f8f3eb8c.hot-update.js
+++login.58304ac122d5f8f3eb8c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.58304ac122d5f8f3eb8c.hot-update.json
+++login.59758b851b0435b5206b.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.59758b851b0435b5206b.hot-update.js
+++login.59758b851b0435b5206b.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.59758b851b0435b5206b.hot-update.json
+++login.5bd37e857646e698bd51.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.5bd37e857646e698bd51.hot-update.js
+++login.5bd37e857646e698bd51.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.5bd37e857646e698bd51.hot-update.json
+++login.5d5db7f0c19b5baa5f94.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.5d5db7f0c19b5baa5f94.hot-update.js
+++login.5d5db7f0c19b5baa5f94.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.5d5db7f0c19b5baa5f94.hot-update.json
+++login.61745db6113ebd365d66.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.61745db6113ebd365d66.hot-update.js
+++login.61745db6113ebd365d66.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.61745db6113ebd365d66.hot-update.json
+++login.6213e200f92cfee32ec0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.6213e200f92cfee32ec0.hot-update.js
+++login.6213e200f92cfee32ec0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.6213e200f92cfee32ec0.hot-update.json
+++login.645fb5d00ebc7ac9f610.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.645fb5d00ebc7ac9f610.hot-update.js
+++login.645fb5d00ebc7ac9f610.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.645fb5d00ebc7ac9f610.hot-update.json
+++login.688f578d3b5153520f25.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.688f578d3b5153520f25.hot-update.js
+++login.688f578d3b5153520f25.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.688f578d3b5153520f25.hot-update.json
+++login.6aa94698ec09b49da122.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.6aa94698ec09b49da122.hot-update.js
+++login.6aa94698ec09b49da122.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.6aa94698ec09b49da122.hot-update.json
+++login.6fae9e09c7385858146d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.6fae9e09c7385858146d.hot-update.js
+++login.6fae9e09c7385858146d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.6fae9e09c7385858146d.hot-update.json
+++login.70b097b77e75adfabfb3.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.70b097b77e75adfabfb3.hot-update.js
+++login.70b097b77e75adfabfb3.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.70b097b77e75adfabfb3.hot-update.json
+++login.71762fcee669c5c587c4.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.71762fcee669c5c587c4.hot-update.js
+++login.71762fcee669c5c587c4.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.71762fcee669c5c587c4.hot-update.json
+++login.7179be7a48379b916022.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7179be7a48379b916022.hot-update.js
+++login.7179be7a48379b916022.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7179be7a48379b916022.hot-update.json
+++login.71f694746cd5598350e9.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.71f694746cd5598350e9.hot-update.js
+++login.71f694746cd5598350e9.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.71f694746cd5598350e9.hot-update.json
+++login.7298537adebbadaf391b.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7298537adebbadaf391b.hot-update.js
+++login.7298537adebbadaf391b.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7298537adebbadaf391b.hot-update.json
+++login.7497e87e96ba93e0a2da.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7497e87e96ba93e0a2da.hot-update.js
+++login.7497e87e96ba93e0a2da.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7497e87e96ba93e0a2da.hot-update.json
+++login.7a4240bc8d868d3a4e49.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7a4240bc8d868d3a4e49.hot-update.js
+++login.7a4240bc8d868d3a4e49.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7a4240bc8d868d3a4e49.hot-update.json
+++login.7b571218c58d34c83558.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7b571218c58d34c83558.hot-update.js
+++login.7b571218c58d34c83558.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7b571218c58d34c83558.hot-update.json
+++login.7d9c59698301d91684fa.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7d9c59698301d91684fa.hot-update.js
+++login.7d9c59698301d91684fa.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.7d9c59698301d91684fa.hot-update.json
+++login.85990c165bbb643b5057.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.85990c165bbb643b5057.hot-update.js
+++login.85990c165bbb643b5057.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.85990c165bbb643b5057.hot-update.json
+++login.8d0dde9a02d7ce70465f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.8d0dde9a02d7ce70465f.hot-update.js
+++login.8d0dde9a02d7ce70465f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.8d0dde9a02d7ce70465f.hot-update.json
+++login.90ccb8e6c68aa0430936.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.90ccb8e6c68aa0430936.hot-update.js
+++login.90ccb8e6c68aa0430936.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.90ccb8e6c68aa0430936.hot-update.json
+++login.927d1f23960dc7cc56ec.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.927d1f23960dc7cc56ec.hot-update.js
+++login.927d1f23960dc7cc56ec.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.927d1f23960dc7cc56ec.hot-update.json
+++login.968dc090135b53e970be.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.968dc090135b53e970be.hot-update.js
+++login.968dc090135b53e970be.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.968dc090135b53e970be.hot-update.json
+++login.9aca0c1298b758d0f7f3.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.9aca0c1298b758d0f7f3.hot-update.js
+++login.9aca0c1298b758d0f7f3.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.9aca0c1298b758d0f7f3.hot-update.json
+++login.9caf108a99c90aab3af9.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.9caf108a99c90aab3af9.hot-update.js
+++login.9caf108a99c90aab3af9.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.9caf108a99c90aab3af9.hot-update.json
+++login.9cd4dbacdd7125bada93.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.9cd4dbacdd7125bada93.hot-update.js
+++login.9cd4dbacdd7125bada93.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.9cd4dbacdd7125bada93.hot-update.json
+++login.a11b79572cff427012e2.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.a11b79572cff427012e2.hot-update.js
+++login.a11b79572cff427012e2.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.a11b79572cff427012e2.hot-update.json
+++login.a21963b9796244942d74.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.a21963b9796244942d74.hot-update.js
+++login.a21963b9796244942d74.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.a21963b9796244942d74.hot-update.json
+++login.a3c8ce7ba906ee5ab9e7.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.a3c8ce7ba906ee5ab9e7.hot-update.js
+++login.a3c8ce7ba906ee5ab9e7.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.a3c8ce7ba906ee5ab9e7.hot-update.json
+++login.a4ff2591e358c32c7ba6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.a4ff2591e358c32c7ba6.hot-update.js
+++login.a4ff2591e358c32c7ba6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.a4ff2591e358c32c7ba6.hot-update.json
+++login.ac664fd35cb7b727056f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.ac664fd35cb7b727056f.hot-update.js
+++login.ac664fd35cb7b727056f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.ac664fd35cb7b727056f.hot-update.json
+++login.af1389b7c3a073b9d70f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.af1389b7c3a073b9d70f.hot-update.js
+++login.af1389b7c3a073b9d70f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.af1389b7c3a073b9d70f.hot-update.json
+++login.be92f3b1a75c3dfbfe19.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.be92f3b1a75c3dfbfe19.hot-update.js
+++login.be92f3b1a75c3dfbfe19.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.be92f3b1a75c3dfbfe19.hot-update.json
+++login.bundle.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.bundle.js
+++login.c1ade2e7c3b44404996f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.c1ade2e7c3b44404996f.hot-update.js
+++login.c1ade2e7c3b44404996f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.c1ade2e7c3b44404996f.hot-update.json
+++login.c3ae9099ce9dced147f0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.c3ae9099ce9dced147f0.hot-update.js
+++login.c3ae9099ce9dced147f0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.c3ae9099ce9dced147f0.hot-update.json
+++login.c4c194cce6dfd7a15513.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.c4c194cce6dfd7a15513.hot-update.js
+++login.c4c194cce6dfd7a15513.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.c4c194cce6dfd7a15513.hot-update.json
+++login.c800d12443e0f41a6e13.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.c800d12443e0f41a6e13.hot-update.js
+++login.c800d12443e0f41a6e13.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.c800d12443e0f41a6e13.hot-update.json
+++login.cc1dfe1386a707434a42.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.cc1dfe1386a707434a42.hot-update.js
+++login.cc1dfe1386a707434a42.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.cc1dfe1386a707434a42.hot-update.json
+++login.cce0ad3ec813951ea3ff.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.cce0ad3ec813951ea3ff.hot-update.js
+++login.cce0ad3ec813951ea3ff.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.cce0ad3ec813951ea3ff.hot-update.json
+++login.d58d7acc6b6f999f42e6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.d58d7acc6b6f999f42e6.hot-update.js
+++login.d58d7acc6b6f999f42e6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.d58d7acc6b6f999f42e6.hot-update.json
+++login.d67f07955685575053ef.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.d67f07955685575053ef.hot-update.js
+++login.d67f07955685575053ef.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.d67f07955685575053ef.hot-update.json
+++login.d80d7845bbb47f415764.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.d80d7845bbb47f415764.hot-update.js
+++login.d80d7845bbb47f415764.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.d80d7845bbb47f415764.hot-update.json
+++login.d8f896bb7e3765300676.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.d8f896bb7e3765300676.hot-update.js
+++login.d8f896bb7e3765300676.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.d8f896bb7e3765300676.hot-update.json
+++login.e05b8a2a423ac67307a1.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.e05b8a2a423ac67307a1.hot-update.js
+++login.e05b8a2a423ac67307a1.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.e05b8a2a423ac67307a1.hot-update.json
+++login.e2899873075f8989c5bd.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.e2899873075f8989c5bd.hot-update.js
+++login.e2899873075f8989c5bd.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.e2899873075f8989c5bd.hot-update.json
+++login.e5b62fe9948f2ff93662.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.e5b62fe9948f2ff93662.hot-update.js
+++login.e5b62fe9948f2ff93662.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.e5b62fe9948f2ff93662.hot-update.json
+++login.e60e9c3ddb804334b8ee.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.e60e9c3ddb804334b8ee.hot-update.js
+++login.e60e9c3ddb804334b8ee.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.e60e9c3ddb804334b8ee.hot-update.json
+++login.eb0c96bd60270a747b41.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.eb0c96bd60270a747b41.hot-update.js
+++login.eb0c96bd60270a747b41.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.eb0c96bd60270a747b41.hot-update.json
+++login.ec1b633b46368e9bfdb6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.ec1b633b46368e9bfdb6.hot-update.js
+++login.ec1b633b46368e9bfdb6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.ec1b633b46368e9bfdb6.hot-update.json
+++login.f153f091cf3d02d250ba.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.f153f091cf3d02d250ba.hot-update.js
+++login.f153f091cf3d02d250ba.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.f153f091cf3d02d250ba.hot-update.json
+++login.f9697212277caad684ed.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.f9697212277caad684ed.hot-update.js
+++login.f9697212277caad684ed.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.f9697212277caad684ed.hot-update.json
+++login.fd21024e9bf0a76b2e82.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.fd21024e9bf0a76b2e82.hot-update.js
+++login.fd21024e9bf0a76b2e82.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\login.fd21024e9bf0a76b2e82.hot-update.json
+++statistic.008948e66038535fd02f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.008948e66038535fd02f.hot-update.js
+++statistic.008948e66038535fd02f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.008948e66038535fd02f.hot-update.json
+++statistic.01ae72e3532ee69e9f8c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.01ae72e3532ee69e9f8c.hot-update.js
+++statistic.01ae72e3532ee69e9f8c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.01ae72e3532ee69e9f8c.hot-update.json
+++statistic.07904f902aa6c0aabc11.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.07904f902aa6c0aabc11.hot-update.js
+++statistic.07904f902aa6c0aabc11.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.07904f902aa6c0aabc11.hot-update.json
+++statistic.07f76c346d4e91a431de.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.07f76c346d4e91a431de.hot-update.js
+++statistic.07f76c346d4e91a431de.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.07f76c346d4e91a431de.hot-update.json
+++statistic.0a36622ec8de07983a2d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.0a36622ec8de07983a2d.hot-update.js
+++statistic.0a36622ec8de07983a2d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.0a36622ec8de07983a2d.hot-update.json
+++statistic.0e6f6cbe6d0faa43babd.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.0e6f6cbe6d0faa43babd.hot-update.js
+++statistic.0e6f6cbe6d0faa43babd.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.0e6f6cbe6d0faa43babd.hot-update.json
+++statistic.1238bad84f49113226ff.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.1238bad84f49113226ff.hot-update.js
+++statistic.1238bad84f49113226ff.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.1238bad84f49113226ff.hot-update.json
+++statistic.138a89ed176f4e216e8c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.138a89ed176f4e216e8c.hot-update.js
+++statistic.138a89ed176f4e216e8c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.138a89ed176f4e216e8c.hot-update.json
+++statistic.14fdd6b13ffa48461c82.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.14fdd6b13ffa48461c82.hot-update.js
+++statistic.14fdd6b13ffa48461c82.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.14fdd6b13ffa48461c82.hot-update.json
+++statistic.1a955ba2692acab3afdd.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.1a955ba2692acab3afdd.hot-update.js
+++statistic.1a955ba2692acab3afdd.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.1a955ba2692acab3afdd.hot-update.json
+++statistic.1d548883c917a57a3cee.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.1d548883c917a57a3cee.hot-update.js
+++statistic.1d548883c917a57a3cee.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.1d548883c917a57a3cee.hot-update.json
+++statistic.22a7dcac10fc3ffccbf0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.22a7dcac10fc3ffccbf0.hot-update.js
+++statistic.22a7dcac10fc3ffccbf0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.22a7dcac10fc3ffccbf0.hot-update.json
+++statistic.283390e65a1b7315e13c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.283390e65a1b7315e13c.hot-update.js
+++statistic.283390e65a1b7315e13c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.283390e65a1b7315e13c.hot-update.json
+++statistic.2927f9751f181b1a2d74.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.2927f9751f181b1a2d74.hot-update.js
+++statistic.2927f9751f181b1a2d74.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.2927f9751f181b1a2d74.hot-update.json
+++statistic.2a6b5ae6e4bc6e027d06.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.2a6b5ae6e4bc6e027d06.hot-update.js
+++statistic.2a6b5ae6e4bc6e027d06.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.2a6b5ae6e4bc6e027d06.hot-update.json
+++statistic.2db1066c7e47d13b729d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.2db1066c7e47d13b729d.hot-update.js
+++statistic.2db1066c7e47d13b729d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.2db1066c7e47d13b729d.hot-update.json
+++statistic.3902fc6ca1a238a4c656.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.3902fc6ca1a238a4c656.hot-update.js
+++statistic.3902fc6ca1a238a4c656.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.3902fc6ca1a238a4c656.hot-update.json
+++statistic.39f777a2cf4ba1ddcd73.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.39f777a2cf4ba1ddcd73.hot-update.js
+++statistic.39f777a2cf4ba1ddcd73.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.39f777a2cf4ba1ddcd73.hot-update.json
+++statistic.3a5f37522745a6959861.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.3a5f37522745a6959861.hot-update.js
+++statistic.3a5f37522745a6959861.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.3a5f37522745a6959861.hot-update.json
+++statistic.3dccdf647e707bdded87.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.3dccdf647e707bdded87.hot-update.js
+++statistic.3dccdf647e707bdded87.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.3dccdf647e707bdded87.hot-update.json
+++statistic.3f5b0d7c5d764b80514c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.3f5b0d7c5d764b80514c.hot-update.js
+++statistic.3f5b0d7c5d764b80514c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.3f5b0d7c5d764b80514c.hot-update.json
+++statistic.40f218c75adcc334b625.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.40f218c75adcc334b625.hot-update.js
+++statistic.40f218c75adcc334b625.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.40f218c75adcc334b625.hot-update.json
+++statistic.42977b3f6b0f4a19be4d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.42977b3f6b0f4a19be4d.hot-update.js
+++statistic.42977b3f6b0f4a19be4d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.42977b3f6b0f4a19be4d.hot-update.json
+++statistic.42c99fc24701ca25e971.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.42c99fc24701ca25e971.hot-update.js
+++statistic.42c99fc24701ca25e971.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.42c99fc24701ca25e971.hot-update.json
+++statistic.44965fe9647e1ba9ed74.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.44965fe9647e1ba9ed74.hot-update.js
+++statistic.44965fe9647e1ba9ed74.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.44965fe9647e1ba9ed74.hot-update.json
+++statistic.469bba90ae06a9b3761d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.469bba90ae06a9b3761d.hot-update.js
+++statistic.469bba90ae06a9b3761d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.469bba90ae06a9b3761d.hot-update.json
+++statistic.47c1998b7fc0d41f0310.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.47c1998b7fc0d41f0310.hot-update.js
+++statistic.47c1998b7fc0d41f0310.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.47c1998b7fc0d41f0310.hot-update.json
+++statistic.4d0f0655733a25fd6cb6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.4d0f0655733a25fd6cb6.hot-update.js
+++statistic.4d0f0655733a25fd6cb6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.4d0f0655733a25fd6cb6.hot-update.json
+++statistic.5298bfbdc5c9331949e0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.5298bfbdc5c9331949e0.hot-update.js
+++statistic.5298bfbdc5c9331949e0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.5298bfbdc5c9331949e0.hot-update.json
+++statistic.58304ac122d5f8f3eb8c.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.58304ac122d5f8f3eb8c.hot-update.js
+++statistic.58304ac122d5f8f3eb8c.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.58304ac122d5f8f3eb8c.hot-update.json
+++statistic.59758b851b0435b5206b.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.59758b851b0435b5206b.hot-update.js
+++statistic.59758b851b0435b5206b.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.59758b851b0435b5206b.hot-update.json
+++statistic.5bd37e857646e698bd51.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.5bd37e857646e698bd51.hot-update.js
+++statistic.5bd37e857646e698bd51.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.5bd37e857646e698bd51.hot-update.json
+++statistic.5d5db7f0c19b5baa5f94.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.5d5db7f0c19b5baa5f94.hot-update.js
+++statistic.5d5db7f0c19b5baa5f94.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.5d5db7f0c19b5baa5f94.hot-update.json
+++statistic.61745db6113ebd365d66.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.61745db6113ebd365d66.hot-update.js
+++statistic.61745db6113ebd365d66.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.61745db6113ebd365d66.hot-update.json
+++statistic.6213e200f92cfee32ec0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.6213e200f92cfee32ec0.hot-update.js
+++statistic.6213e200f92cfee32ec0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.6213e200f92cfee32ec0.hot-update.json
+++statistic.645fb5d00ebc7ac9f610.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.645fb5d00ebc7ac9f610.hot-update.js
+++statistic.645fb5d00ebc7ac9f610.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.645fb5d00ebc7ac9f610.hot-update.json
+++statistic.688f578d3b5153520f25.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.688f578d3b5153520f25.hot-update.js
+++statistic.688f578d3b5153520f25.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.688f578d3b5153520f25.hot-update.json
+++statistic.6aa94698ec09b49da122.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.6aa94698ec09b49da122.hot-update.js
+++statistic.6aa94698ec09b49da122.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.6aa94698ec09b49da122.hot-update.json
+++statistic.6fae9e09c7385858146d.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.6fae9e09c7385858146d.hot-update.js
+++statistic.6fae9e09c7385858146d.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.6fae9e09c7385858146d.hot-update.json
+++statistic.70b097b77e75adfabfb3.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.70b097b77e75adfabfb3.hot-update.js
+++statistic.70b097b77e75adfabfb3.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.70b097b77e75adfabfb3.hot-update.json
+++statistic.71762fcee669c5c587c4.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.71762fcee669c5c587c4.hot-update.js
+++statistic.71762fcee669c5c587c4.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.71762fcee669c5c587c4.hot-update.json
+++statistic.7179be7a48379b916022.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7179be7a48379b916022.hot-update.js
+++statistic.7179be7a48379b916022.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7179be7a48379b916022.hot-update.json
+++statistic.71f694746cd5598350e9.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.71f694746cd5598350e9.hot-update.js
+++statistic.71f694746cd5598350e9.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.71f694746cd5598350e9.hot-update.json
+++statistic.7298537adebbadaf391b.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7298537adebbadaf391b.hot-update.js
+++statistic.7298537adebbadaf391b.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7298537adebbadaf391b.hot-update.json
+++statistic.7497e87e96ba93e0a2da.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7497e87e96ba93e0a2da.hot-update.js
+++statistic.7497e87e96ba93e0a2da.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7497e87e96ba93e0a2da.hot-update.json
+++statistic.7a4240bc8d868d3a4e49.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7a4240bc8d868d3a4e49.hot-update.js
+++statistic.7a4240bc8d868d3a4e49.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7a4240bc8d868d3a4e49.hot-update.json
+++statistic.7b571218c58d34c83558.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7b571218c58d34c83558.hot-update.js
+++statistic.7b571218c58d34c83558.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7b571218c58d34c83558.hot-update.json
+++statistic.7d9c59698301d91684fa.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7d9c59698301d91684fa.hot-update.js
+++statistic.7d9c59698301d91684fa.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.7d9c59698301d91684fa.hot-update.json
+++statistic.85990c165bbb643b5057.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.85990c165bbb643b5057.hot-update.js
+++statistic.85990c165bbb643b5057.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.85990c165bbb643b5057.hot-update.json
+++statistic.8d0dde9a02d7ce70465f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.8d0dde9a02d7ce70465f.hot-update.js
+++statistic.8d0dde9a02d7ce70465f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.8d0dde9a02d7ce70465f.hot-update.json
+++statistic.90ccb8e6c68aa0430936.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.90ccb8e6c68aa0430936.hot-update.js
+++statistic.90ccb8e6c68aa0430936.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.90ccb8e6c68aa0430936.hot-update.json
+++statistic.927d1f23960dc7cc56ec.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.927d1f23960dc7cc56ec.hot-update.js
+++statistic.927d1f23960dc7cc56ec.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.927d1f23960dc7cc56ec.hot-update.json
+++statistic.968dc090135b53e970be.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.968dc090135b53e970be.hot-update.js
+++statistic.968dc090135b53e970be.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.968dc090135b53e970be.hot-update.json
+++statistic.9aca0c1298b758d0f7f3.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.9aca0c1298b758d0f7f3.hot-update.js
+++statistic.9aca0c1298b758d0f7f3.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.9aca0c1298b758d0f7f3.hot-update.json
+++statistic.9caf108a99c90aab3af9.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.9caf108a99c90aab3af9.hot-update.js
+++statistic.9caf108a99c90aab3af9.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.9caf108a99c90aab3af9.hot-update.json
+++statistic.9cd4dbacdd7125bada93.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.9cd4dbacdd7125bada93.hot-update.js
+++statistic.9cd4dbacdd7125bada93.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.9cd4dbacdd7125bada93.hot-update.json
+++statistic.a11b79572cff427012e2.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.a11b79572cff427012e2.hot-update.js
+++statistic.a11b79572cff427012e2.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.a11b79572cff427012e2.hot-update.json
+++statistic.a21963b9796244942d74.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.a21963b9796244942d74.hot-update.js
+++statistic.a21963b9796244942d74.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.a21963b9796244942d74.hot-update.json
+++statistic.a3c8ce7ba906ee5ab9e7.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.a3c8ce7ba906ee5ab9e7.hot-update.js
+++statistic.a3c8ce7ba906ee5ab9e7.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.a3c8ce7ba906ee5ab9e7.hot-update.json
+++statistic.a4ff2591e358c32c7ba6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.a4ff2591e358c32c7ba6.hot-update.js
+++statistic.a4ff2591e358c32c7ba6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.a4ff2591e358c32c7ba6.hot-update.json
+++statistic.ac664fd35cb7b727056f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.ac664fd35cb7b727056f.hot-update.js
+++statistic.ac664fd35cb7b727056f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.ac664fd35cb7b727056f.hot-update.json
+++statistic.af1389b7c3a073b9d70f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.af1389b7c3a073b9d70f.hot-update.js
+++statistic.af1389b7c3a073b9d70f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.af1389b7c3a073b9d70f.hot-update.json
+++statistic.be92f3b1a75c3dfbfe19.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.be92f3b1a75c3dfbfe19.hot-update.js
+++statistic.be92f3b1a75c3dfbfe19.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.be92f3b1a75c3dfbfe19.hot-update.json
+++statistic.bundle.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.bundle.js
+++statistic.c1ade2e7c3b44404996f.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.c1ade2e7c3b44404996f.hot-update.js
+++statistic.c1ade2e7c3b44404996f.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.c1ade2e7c3b44404996f.hot-update.json
+++statistic.c3ae9099ce9dced147f0.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.c3ae9099ce9dced147f0.hot-update.js
+++statistic.c3ae9099ce9dced147f0.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.c3ae9099ce9dced147f0.hot-update.json
+++statistic.c4c194cce6dfd7a15513.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.c4c194cce6dfd7a15513.hot-update.js
+++statistic.c4c194cce6dfd7a15513.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.c4c194cce6dfd7a15513.hot-update.json
+++statistic.c800d12443e0f41a6e13.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.c800d12443e0f41a6e13.hot-update.js
+++statistic.c800d12443e0f41a6e13.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.c800d12443e0f41a6e13.hot-update.json
+++statistic.cc1dfe1386a707434a42.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.cc1dfe1386a707434a42.hot-update.js
+++statistic.cc1dfe1386a707434a42.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.cc1dfe1386a707434a42.hot-update.json
+++statistic.cce0ad3ec813951ea3ff.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.cce0ad3ec813951ea3ff.hot-update.js
+++statistic.cce0ad3ec813951ea3ff.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.cce0ad3ec813951ea3ff.hot-update.json
+++statistic.d58d7acc6b6f999f42e6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.d58d7acc6b6f999f42e6.hot-update.js
+++statistic.d58d7acc6b6f999f42e6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.d58d7acc6b6f999f42e6.hot-update.json
+++statistic.d67f07955685575053ef.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.d67f07955685575053ef.hot-update.js
+++statistic.d67f07955685575053ef.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.d67f07955685575053ef.hot-update.json
+++statistic.d80d7845bbb47f415764.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.d80d7845bbb47f415764.hot-update.js
+++statistic.d80d7845bbb47f415764.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.d80d7845bbb47f415764.hot-update.json
+++statistic.d8f896bb7e3765300676.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.d8f896bb7e3765300676.hot-update.js
+++statistic.d8f896bb7e3765300676.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.d8f896bb7e3765300676.hot-update.json
+++statistic.e05b8a2a423ac67307a1.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.e05b8a2a423ac67307a1.hot-update.js
+++statistic.e05b8a2a423ac67307a1.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.e05b8a2a423ac67307a1.hot-update.json
+++statistic.e2899873075f8989c5bd.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.e2899873075f8989c5bd.hot-update.js
+++statistic.e2899873075f8989c5bd.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.e2899873075f8989c5bd.hot-update.json
+++statistic.e5b62fe9948f2ff93662.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.e5b62fe9948f2ff93662.hot-update.js
+++statistic.e5b62fe9948f2ff93662.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.e5b62fe9948f2ff93662.hot-update.json
+++statistic.e60e9c3ddb804334b8ee.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.e60e9c3ddb804334b8ee.hot-update.js
+++statistic.e60e9c3ddb804334b8ee.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.e60e9c3ddb804334b8ee.hot-update.json
+++statistic.eb0c96bd60270a747b41.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.eb0c96bd60270a747b41.hot-update.js
+++statistic.eb0c96bd60270a747b41.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.eb0c96bd60270a747b41.hot-update.json
+++statistic.ec1b633b46368e9bfdb6.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.ec1b633b46368e9bfdb6.hot-update.js
+++statistic.ec1b633b46368e9bfdb6.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.ec1b633b46368e9bfdb6.hot-update.json
+++statistic.f153f091cf3d02d250ba.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.f153f091cf3d02d250ba.hot-update.js
+++statistic.f153f091cf3d02d250ba.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.f153f091cf3d02d250ba.hot-update.json
+++statistic.f9697212277caad684ed.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.f9697212277caad684ed.hot-update.js
+++statistic.f9697212277caad684ed.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.f9697212277caad684ed.hot-update.json
+++statistic.fd21024e9bf0a76b2e82.hot-update.js
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.fd21024e9bf0a76b2e82.hot-update.js
+++statistic.fd21024e9bf0a76b2e82.hot-update.json
+i:{113e9cbf-5135-4f67-b603-3c5390dd612a}:c:\users\ivan sachishin\desktop\dev\beerland\beerlandweb\wwwroot\dist\statistic.fd21024e9bf0a76b2e82.hot-update.json
+++IStatisticService.cs
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\bll\interfaces\istatisticservice.cs
+++Services
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\bll\services\
+++StatisticService.cs
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\bll\services\statisticservice.cs
+++ViewModels
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\bll\viewmodels\
+++CreateStatisticViewModel.cs
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\bll\viewmodels\createstatisticviewmodel.cs
+++FinalStatisticViewModel.cs
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\bll\viewmodels\finalstatisticviewmodel.cs
+++LoginViewModel.cs
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\bll\viewmodels\loginviewmodel.cs
+++StatisticViewModel.cs
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\bll\viewmodels\statisticviewmodel.cs
+++AutoMapper (10.1.1)
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:>34987
+++DAL
+i:{719efeb3-4cb8-43f5-b85f-cb69caa19de2}:c:\users\ivan sachishin\desktop\dev\beerland\dal\dal.csproj
+i:{00000000-0000-0000-0000-000000000000}:DAL
+++Entities
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\entities\
+++BeerMark.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\entities\beermark.cs
+++ProductionStatistic.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\entities\productionstatistic.cs
+++User.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\entities\user.cs
+++Migrations
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\
+++20220124132657_Initial.cs
+++20220207164158_init.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\applicationdbcontextmodelsnapshot.cs
+++Repositories
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\repositories\
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\repositories\repositories\
+++IStatisticRepository.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\repositories\interfaces\istatisticrepository.cs
+++StatisticRepository.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\repositories\repositories\statisticrepository.cs
+++ApplicationDbContext.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\applicationdbcontext.cs
+++20220124132657_Initial.Designer.cs
+++20220207164158_init.Designer.cs
+++Microsoft.EntityFrameworkCore.Sqlite (6.0.1)
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:>34989
+++Microsoft.EntityFrameworkCore.Sqlite.Design (1.1.6)
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:>34985
+++20220207170104_initIdentityServerStores.cs
+++PersistedGrantDbContextModelSnapshot.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\persistedgrantdb\persistedgrantdbcontextmodelsnapshot.cs
+++20220207170104_initIdentityServerStores.Designer.cs
+++20220207170252_initIdentityPersistedDb.cs
+++20220207170252_initIdentityPersistedDb.Designer.cs
+++20220207170406_initIdentityPersistedDb.cs
+++20220207170406_initIdentityPersistedDb.Designer.cs
+++20220207170611_initIdentityPersistedDb.cs
+++20220207170611_initIdentityPersistedDb.Designer.cs
+++ConfigurationDbContextModelSnapshot.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\configurationdb\configurationdbcontextmodelsnapshot.cs
+++20220207170703_initIdentityPersistedDb.cs
+++20220207170703_initIdentityPersistedDb.Designer.cs
+++20220207171332_InitMig.cs
+++20220207171332_InitMig.Designer.cs
+++20220207171436_persistedDbInit.cs
+++20220207171436_persistedDbInit.Designer.cs
+++20220207171514_persistedDbInit.cs
+++20220207171514_persistedDbInit.Designer.cs
+++20220207172002_init.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\20220207172002_init.cs
+++20220207172002_init.Designer.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\20220207172002_init.designer.cs
+++PersistedGrantDb
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\persistedgrantdb\
+++20220207172019_init.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\persistedgrantdb\20220207172019_init.cs
+++20220207172019_init.Designer.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\persistedgrantdb\20220207172019_init.designer.cs
+++ConfigurationDb
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\configurationdb\
+++20220207172031_init.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\configurationdb\20220207172031_init.cs
+++20220207172031_init.Designer.cs
+i:{61185b25-0e8b-4a07-be52-e137e22f2d91}:c:\users\ivan sachishin\desktop\dev\beerland\dal\migrations\configurationdb\20220207172031_init.designer.cs

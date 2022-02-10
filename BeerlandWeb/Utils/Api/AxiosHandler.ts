@@ -1,5 +1,6 @@
 ﻿import axios, { AxiosResponse } from "axios";
 
+//TODO: add passing of headers into query
 export default class AxiosHandler {
     static axiosGet = async <I>(data : I, url : string, onSuccess : Function, onFail? : Function) => {
         const response = await axios.get<AxiosResponse>(url, {
