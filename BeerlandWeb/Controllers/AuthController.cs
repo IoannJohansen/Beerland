@@ -1,6 +1,5 @@
 ﻿using BLL.ViewModels;
 using DAL.Entities;
-using IdentityModel.Client;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -11,12 +10,10 @@ namespace BeerlandWeb.Controllers;
 [Route("auth")]
 public class AuthController : Controller
 {
-    private readonly IHttpClientFactory _httpClientFactory;
     private readonly UserManager<AppUser> _userManager;
 
-    public AuthController(IHttpClientFactory httpClientFactory, UserManager<AppUser> userManager)
+    public AuthController(UserManager<AppUser> userManager)
     {
-        _httpClientFactory = httpClientFactory;
         _userManager = userManager;
     }
     
@@ -31,18 +28,19 @@ public class AuthController : Controller
     [Route("login")]
     public async Task<LoginResponseViewModel> Login([FromBody]LoginRequestViewModel loginRequestVm)
     {
-        var httpClient = _httpClientFactory.CreateClient();
-        var tokenResponse = await httpClient.RequestPasswordTokenAsync(new PasswordTokenRequest()
-        {
-            Address = "https://localhost:7169/connect/token",
-            UserName = loginRequestVm.Login,
-            Password = loginRequestVm.Password,
-            ClientId = "BeerlandClient",
-        });
+        var user = await _userManager.FindByNameAsync(loginRequestVm.Login);
+        var authresult = await _userManager.CheckPasswordAsync(user, loginRequestVm.Password);
         return new LoginResponseViewModel
         {
-            Success = !tokenResponse.IsError,
-            Access_token = tokenResponse.AccessToken
+            Success = authresult
         };
+    }
+    
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [HttpGet]
+    [Route("test")]
+    public string Test()
+    {
+        return "Test";
     }
 }

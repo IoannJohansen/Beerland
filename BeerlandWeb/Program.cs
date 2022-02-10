@@ -5,6 +5,8 @@ using BLL.Interfaces;
 using BLL.Services;
 using DAL;
 using DAL.Entities;
+using DAL.Repositories.Interfaces;
+using DAL.Repositories.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -31,25 +33,23 @@ builder.Services.AddDbContext<ApplicationDbContext>(t =>
 builder.Services.AddSingleton(mapper);    
 builder.Services.AddTransient<IStatisticService, StatisticService>();
 builder.Services.AddTransient<IUserPasswordStore<AppUser>, CustomUserPasswordStore>();
+builder.Services.AddTransient<IUserRepository, UserRepository>();
+builder.Services.AddTransient<IUserService, UserService>();
 
-builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
+
+builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 {
-    options.Password.RequireDigit = false;
-    options.Password.RequireUppercase = false;
-    options.Password.RequireNonAlphanumeric = false;
-    options.Password.RequiredLength = 3;
-}).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+    opt.Password.RequiredLength = 4;
+    opt.Password.RequireDigit = false;
+    opt.Password.RequireNonAlphanumeric = false;
+    opt.Password.RequireUppercase = false;
+    opt.Password.RequireLowercase = false;
+    opt.User.RequireUniqueEmail = true;
+    opt.User.AllowedUserNameCharacters = "abcçdefgðhýijklmnoöpqrsþtuüvwxyzABCÇDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+}).AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
 
-builder.Services.AddIdentityServer()
-    .AddAspNetIdentity<AppUser>()
-    .AddInMemoryClients(IdentityServerConfig.Clients)
-    .AddInMemoryApiResources(IdentityServerConfig.ApiResources)
-    .AddInMemoryApiScopes(IdentityServerConfig.ApiScopes)
-    .AddInMemoryIdentityResources(IdentityServerConfig.IdentityResources)
-    .AddProfileService<ProfileService>()
-    .AddDeveloperSigningCredential();
-
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+builder.Services.AddAuthentication()
     .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
     {
         options.Authority = "https://localhost:7169";
@@ -68,7 +68,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseIdentityServer();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
