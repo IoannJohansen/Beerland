@@ -1,94 +1,85 @@
-﻿using DAL;
+﻿using BLL.Interfaces;
 using DAL.Entities;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 
 namespace BeerlandWeb.Core;
 
 public class CustomUserPasswordStore : IUserPasswordStore<AppUser>
 {
-    private readonly ApplicationDbContext _applicationDbContext;
+    private readonly IUserService _userService;
 
-    public CustomUserPasswordStore(ApplicationDbContext applicationDbContext)
+    public CustomUserPasswordStore(IUserService userService)
     {
-        _applicationDbContext = applicationDbContext;
+        _userService = userService;
     }
-    
-    public void Dispose() => _applicationDbContext.Dispose();
 
-    public async Task<string?> GetUserIdAsync(AppUser user, CancellationToken cancellationToken) => await Task.Run(()=>
+    public void Dispose()
     {
-        return _applicationDbContext.Users.FirstOrDefault(t => t.Id == user.Id)?.Id.ToString();
-    }, cancellationToken);
+        _userService.Dispose();
+    }
+
+    public async Task<string> GetUserIdAsync(AppUser user, CancellationToken cancellationToken)
+    {
+        return await _userService.GetUserIdAsync(user, cancellationToken);
+    }
 
     public async Task<string> GetUserNameAsync(AppUser user, CancellationToken cancellationToken)
     {
-        return await Task.FromResult(user.UserName);
+        return await _userService.GetUserNameAsync(user, cancellationToken);
     }
 
-    public async Task SetUserNameAsync(AppUser user, string userName, CancellationToken cancellationToken) =>
-        await Task.Run(
-            () =>
-            {
-                user.UserName = userName;
-                _applicationDbContext.Users.Update(user);
-                _applicationDbContext.SaveChanges();
-            }, cancellationToken);
-
-    public Task<string> GetNormalizedUserNameAsync(AppUser user, CancellationToken cancellationToken)
+    public async Task SetUserNameAsync(AppUser user, string userName, CancellationToken cancellationToken)
     {
-        return Task.FromResult(user.UserName.ToUpper());
+        await _userService.SetUserNameAsync(user, userName, cancellationToken);
     }
 
-    public Task SetNormalizedUserNameAsync(AppUser user, string normalizedName, CancellationToken cancellationToken)
+    public async Task<string> GetNormalizedUserNameAsync(AppUser user, CancellationToken cancellationToken)
     {
-        return Task.CompletedTask;
+        return await _userService.GetNormalizedUserNameAsync(user, cancellationToken);
+    }
+
+    public async Task SetNormalizedUserNameAsync(AppUser user, string normalizedName, CancellationToken cancellationToken)
+    {
+        await _userService.SetNormalizedUserNameAsync(user, normalizedName, cancellationToken);
     }
 
     public async Task<IdentityResult> CreateAsync(AppUser user, CancellationToken cancellationToken)
     {
-        await _applicationDbContext.Users.AddAsync(user, cancellationToken);
-        await _applicationDbContext.SaveChangesAsync(cancellationToken);
-        return IdentityResult.Success;
+        return await _userService.CreateAsync(user, cancellationToken);
     }
 
-    public async Task<IdentityResult> UpdateAsync(AppUser user, CancellationToken cancellationToken) => await Task.Run(
-        () =>
-        {
-            _applicationDbContext.Users.Update(user);
-            return IdentityResult.Success;
-        }, cancellationToken);
+    public async Task<IdentityResult> UpdateAsync(AppUser user, CancellationToken cancellationToken)
+    {
+        return await _userService.UpdateAsync(user, cancellationToken);
+    }
 
-    public async Task<IdentityResult> DeleteAsync(AppUser user, CancellationToken cancellationToken) => await Task.Run(
-        () =>
-        {
-            _applicationDbContext.Users.Remove(user);
-            return IdentityResult.Success;
-        }, cancellationToken);
+    public async Task<IdentityResult> DeleteAsync(AppUser user, CancellationToken cancellationToken)
+    {
+        return await _userService.DeleteAsync(user, cancellationToken);
+    }
 
     public async Task<AppUser> FindByIdAsync(string userId, CancellationToken cancellationToken)
     {
-        return await _applicationDbContext.Users.FirstOrDefaultAsync(t => t.Id.ToString() == userId, cancellationToken: cancellationToken);
+        return await _userService.FindByIdAsync(userId, cancellationToken);
     }
 
     public async Task<AppUser> FindByNameAsync(string normalizedUserName, CancellationToken cancellationToken)
     {
-        return await _applicationDbContext.Users.FirstOrDefaultAsync(t => t.UserName.ToUpper() == normalizedUserName, cancellationToken: cancellationToken);
+        return await _userService.FindByNameAsync(normalizedUserName, cancellationToken);
     }
 
-    public Task SetPasswordHashAsync(AppUser user, string passwordHash, CancellationToken cancellationToken)
+    public async Task SetPasswordHashAsync(AppUser user, string passwordHash, CancellationToken cancellationToken)
     {
-        user.PasswordHash = passwordHash;
-        return Task.CompletedTask;
+        await _userService.SetPasswordHashAsync(user, passwordHash, cancellationToken);
     }
 
-    public Task<string> GetPasswordHashAsync(AppUser user, CancellationToken cancellationToken)
+    public async Task<string> GetPasswordHashAsync(AppUser user, CancellationToken cancellationToken)
     {
-        return Task.FromResult(user.PasswordHash);
+        return await _userService.GetPasswordHashAsync(user, cancellationToken);
     }
 
-    public Task<bool> HasPasswordAsync(AppUser user, CancellationToken cancellationToken)
+    public async Task<bool> HasPasswordAsync(AppUser user, CancellationToken cancellationToken)
     {
-        return Task.FromResult(!string.IsNullOrEmpty(user.PasswordHash));
+        return await _userService.HasPasswordAsync(user, cancellationToken);
     }
 }

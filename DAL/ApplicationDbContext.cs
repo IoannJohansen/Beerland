@@ -1,9 +1,11 @@
 ﻿using DAL.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DAL
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<AppUser, IdentityRole, string>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {}
@@ -11,8 +13,6 @@ namespace DAL
         public virtual DbSet<BeerMark> BeerMarks { get; set; }
 
         public virtual DbSet<ProductionStatistic> ProductionStatictics { get; set; }
-        
-        public virtual DbSet<AppUser> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
