@@ -1,3 +1,4 @@
+using System.Text;
 using AutoMapper;
 using BeerlandWeb.Config;
 using BeerlandWeb.Core;
@@ -10,6 +11,7 @@ using DAL.Repositories.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,7 +37,7 @@ builder.Services.AddTransient<IStatisticService, StatisticService>();
 builder.Services.AddTransient<IUserPasswordStore<AppUser>, CustomUserPasswordStore>();
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IUserService, UserService>();
-
+builder.Services.AddTransient<IJwtTokenService<AppUser>, JwtTokenService>();
 
 builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 {
@@ -44,16 +46,26 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
     opt.Password.RequireNonAlphanumeric = false;
     opt.Password.RequireUppercase = false;
     opt.Password.RequireLowercase = false;
-    opt.User.RequireUniqueEmail = true;
-    opt.User.AllowedUserNameCharacters = "abcçdefgðhýijklmnoöpqrsþtuüvwxyzABCÇDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+    opt.User.RequireUniqueEmail = false;
+    opt.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCÇDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
 }).AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
-builder.Services.AddAuthentication()
+builder.Services.AddAuthentication(options =>
+    {
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    })
     .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
     {
-        options.Authority = "https://localhost:7169";
-        options.Audience = "BeerlandApi";
+        options.TokenValidationParameters = new TokenValidationParameters()
+        {
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtOptions:SecretKey"])),
+            ValidateIssuerSigningKey = true,
+            ValidateAudience = false,
+            ValidateLifetime = true,
+            ValidateIssuer = false
+        };
     });
 
 var app = builder.Build();
