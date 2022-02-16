@@ -2,6 +2,7 @@ using System.Text;
 using AutoMapper;
 using BeerlandWeb.Config;
 using BeerlandWeb.Core;
+using BeerlandWeb.Middleware;
 using BLL.Interfaces;
 using BLL.Services;
 using DAL;
@@ -39,16 +40,7 @@ builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IJwtTokenService<AppUser>, JwtTokenService>();
 
-builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
-{
-    opt.Password.RequiredLength = 4;
-    opt.Password.RequireDigit = false;
-    opt.Password.RequireNonAlphanumeric = false;
-    opt.Password.RequireUppercase = false;
-    opt.Password.RequireLowercase = false;
-    opt.User.RequireUniqueEmail = false;
-    opt.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCÇDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
-}).AddEntityFrameworkStores<ApplicationDbContext>()
+builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
 builder.Services.AddAuthentication(options =>
@@ -64,7 +56,7 @@ builder.Services.AddAuthentication(options =>
             ValidateIssuerSigningKey = true,
             ValidateAudience = false,
             ValidateLifetime = true,
-            ValidateIssuer = false
+            ValidateIssuer = false,
         };
     });
 
@@ -77,7 +69,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseRouting();
 
 app.UseAuthentication();

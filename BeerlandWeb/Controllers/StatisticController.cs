@@ -32,7 +32,8 @@ namespace BeerlandWeb.Controllers
             }
             return StatusCode(StatusCodes.Status200OK, statistic);
         }
-
+    
+        //TODO: check existing start stat before add start stat
         [HttpPost]
         [Route("addStartStat")]
         public async Task<IActionResult> AddStartStatistic([FromBody] CreateStatisticViewModel createStatisticViewModel)
@@ -41,6 +42,7 @@ namespace BeerlandWeb.Controllers
             return StatusCode(StatusCodes.Status201Created, createdStatistic);
         }
 
+        //TODO: check existing of start stat before add final stat
         [HttpPost]
         [Route("addFinalStat")]
         public async Task<IActionResult> AddFinalStatistic([FromBody] FinalStatisticViewModel finalStatisticViewModel)

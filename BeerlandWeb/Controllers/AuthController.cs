@@ -34,20 +34,15 @@ public class AuthController : Controller
     {
         var user = await _userManager.FindByNameAsync(loginRequestVm.Login);
         if (!await _userManager.CheckPasswordAsync(user, loginRequestVm.Password))
-            return new LoginResponseViewModel
-            {
-                Success = false,
-            };
+            throw new Exception("Invalid login or password");
         var token = await _jwtTokenService.GenerateJwtToken(user);
-        
         return new LoginResponseViewModel
         {
-            Success = true,
             Access_token = new JwtSecurityTokenHandler().WriteToken(token)
         };
     }
     
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
+    // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "ПикПок")]
     [HttpGet]
     [Route("test")]
     public async Task<string> Test()
@@ -84,7 +79,7 @@ public class AuthController : Controller
         await _userManager.AddToRoleAsync(test3, "User");*/
         #endregion
 
-        
+        throw new Exception("check");
         return "Test";
     }
 }

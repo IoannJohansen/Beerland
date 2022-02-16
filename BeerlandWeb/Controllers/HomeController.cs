@@ -16,5 +16,12 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    [HttpGet]
+    [Route("error")]
+    public IActionResult Error()
+    {
+        return View("ErrorView");
+    }
     
 }
