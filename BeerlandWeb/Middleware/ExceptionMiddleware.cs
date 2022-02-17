@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Text.Json;
+using BeerlandWeb.Core.Extensions;
 using DAL.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +10,7 @@ public class ExceptionMiddleware
 {
     private readonly RequestDelegate _next;
     private readonly ILogger _logger;
-
+    
     public ExceptionMiddleware(RequestDelegate next)
     {
         _next = next;
@@ -30,7 +31,7 @@ public class ExceptionMiddleware
     private async Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-        if (context.Request.Headers.XRequestedWith=="XMLHttpRequest")
+        if (context.Request.IsAjaxRequest())
         {
             context.Response.ContentType = "application/json";
             await context.Response.WriteAsync(JsonSerializer.Serialize(new ErrorModel()
