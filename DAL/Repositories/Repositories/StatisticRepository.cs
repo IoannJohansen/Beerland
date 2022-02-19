@@ -30,7 +30,7 @@ namespace DAL.Repositories.Repositories
 
         public async Task<ProductionStatistic> GetByDateAndMarkAsync(DateTime date, long beerMarkId)
         {
-            return await applicationDbContext.ProductionStatictics.Where(t => t.Date.Date == date.Date && t.BeerMarkId == beerMarkId).FirstAsync();
+            return await applicationDbContext.ProductionStatictics.Where(t => t.Date.Date == date.Date && t.BeerMarkId == beerMarkId).FirstOrDefaultAsync();
         }
 
         public async Task<ProductionStatistic> UpdateStatisticAsync(ProductionStatistic statistic) => await Task.Run(() => applicationDbContext.ProductionStatictics.Update(statistic).Entity);

@@ -34,7 +34,9 @@ public class AuthController : Controller
     {
         var user = await _userManager.FindByNameAsync(loginRequestVm.Login);
         if (!await _userManager.CheckPasswordAsync(user, loginRequestVm.Password))
+        {
             throw new Exception("Invalid login or password");
+        }
         var token = await _jwtTokenService.GenerateJwtToken(user);
         return new LoginResponseViewModel
         {
@@ -42,10 +44,10 @@ public class AuthController : Controller
         };
     }
     
-    // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "ПикПок")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Never")]
     [HttpGet]
     [Route("test")]
-    public async Task<string> Test()
+    public string Test()
     {
         #region Init users and data
         /*await _roleManager.CreateAsync(new IdentityRole("User"));
@@ -78,8 +80,6 @@ public class AuthController : Controller
         await _userManager.CreateAsync(test3);
         await _userManager.AddToRoleAsync(test3, "User");*/
         #endregion
-
-        throw new Exception("check");
         return "Test";
     }
 }

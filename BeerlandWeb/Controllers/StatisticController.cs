@@ -2,53 +2,54 @@
 using BLL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BeerlandWeb.Controllers
+namespace BeerlandWeb.Controllers;
+
+[Route("statistic")]
+public class StatisticController : Controller
 {
-    [Route("statistic")]
-    public class StatisticController : Controller
+    public StatisticController(IStatisticService statisticService)
     {
-        public StatisticController(IStatisticService statisticService)
-        {
-            this.statisticService = statisticService;
-        }
+        _statisticService = statisticService;
+    }
         
-        private readonly IStatisticService statisticService;
+    private readonly IStatisticService _statisticService;
 
-        [HttpGet]
-        [Route("index")]
-        public IActionResult Index()
-        {
-            return View();
-        }
+    [HttpGet]
+    [Route("index")]
+    public IActionResult Index()
+    {
+        return View();
+    }
         
-        [HttpGet]
-        [Route("getStat")]
-        public async Task<IActionResult> GetStatistic(DateTime date)
+    [HttpGet]
+    [Route("getStat")]
+    public async Task<IActionResult> GetStatistic(DateTime date)
+    {
+        var statistic = await _statisticService.GetByDate(date);
+        if (statistic.Count == 0)
         {
-            var statistic = await statisticService.GetByDate(date);
-            if (statistic.Count == 0)
-            {
-                return StatusCode(StatusCodes.Status204NoContent);
-            }
-            return StatusCode(StatusCodes.Status200OK, statistic);
+            return StatusCode(StatusCodes.Status204NoContent);
         }
+        return StatusCode(StatusCodes.Status200OK, statistic);
+    }
     
-        //TODO: check existing start stat before add start stat
-        [HttpPost]
-        [Route("addStartStat")]
-        public async Task<IActionResult> AddStartStatistic([FromBody] CreateStatisticViewModel createStatisticViewModel)
-        {
-            var createdStatistic =  await statisticService.AddStartStatistic(createStatisticViewModel);
-            return StatusCode(StatusCodes.Status201Created, createdStatistic);
-        }
+    [HttpPost]
+    [Route("addStartStat")]
+    public async Task<IActionResult> AddStartStatistic([FromBody] CreateStatisticViewModel createStatisticViewModel)
+    {
+        var startStatistic = await _statisticService.GetByNameAndDate(DateTime.Now, createStatisticViewModel.BeerMarkId);
+        if (startStatistic != null) throw new Exception("Statistic for this date and mark already exists");
+        var createdStatistic =  await _statisticService.AddStartStatistic(createStatisticViewModel);
+        return StatusCode(StatusCodes.Status201Created, createdStatistic);
+    }
 
-        //TODO: check existing of start stat before add final stat
-        [HttpPost]
-        [Route("addFinalStat")]
-        public async Task<IActionResult> AddFinalStatistic([FromBody] FinalStatisticViewModel finalStatisticViewModel)
-        {
-            var updatedStatistic = await statisticService.AddFinalStatistic(finalStatisticViewModel);
-            return StatusCode(StatusCodes.Status200OK, updatedStatistic);
-        }
+    [HttpPost]
+    [Route("addFinalStat")]
+    public async Task<IActionResult> AddFinalStatistic([FromBody] FinalStatisticViewModel finalStatisticViewModel)
+    {
+        var startStatistic = await _statisticService.GetByNameAndDate(DateTime.Now, finalStatisticViewModel.BeerMarkId);
+        if (startStatistic == null) throw new Exception("Start statistic for this date and mark wasn't added");
+        var updatedStatistic = await _statisticService.AddFinalStatistic(finalStatisticViewModel);
+        return StatusCode(StatusCodes.Status200OK, updatedStatistic);
     }
 }

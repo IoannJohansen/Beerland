@@ -13,71 +13,83 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Serilog;
+using NLog;
+using NLog.Web;
 
-var builder = WebApplication.CreateBuilder(args);
-builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console());
 
-builder.Services.AddControllersWithViews();
-
-var connectionString = builder.Configuration.GetConnectionString("default");
-
-var mapperConfiguration = new MapperConfiguration(opt =>
+try
 {
-    opt.AddProfile(new MappingProfile());
-});
-var mapper = mapperConfiguration.CreateMapper();
+    var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<ApplicationDbContext>(t =>
-{
-    t.UseSqlite(connectionString);
-});
+    builder.Logging.ClearProviders();
+    builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+    builder.Host.UseNLog();
+    
+    builder.Services.AddControllersWithViews();
 
-builder.Services.AddSingleton(mapper);    
-builder.Services.AddTransient<IStatisticService, StatisticService>();
-builder.Services.AddTransient<IUserPasswordStore<AppUser>, CustomUserPasswordStore>();
-builder.Services.AddTransient<IUserRepository, UserRepository>();
-builder.Services.AddTransient<IUserService, UserService>();
-builder.Services.AddTransient<IJwtTokenService<AppUser>, JwtTokenService>();
+    var connectionString = builder.Configuration.GetConnectionString("default");
 
-builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddDefaultTokenProviders();
-
-builder.Services.AddAuthentication(options =>
+    var mapperConfiguration = new MapperConfiguration(opt =>
     {
-        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    })
-    .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+        opt.AddProfile(new MappingProfile());
+    });
+    var mapper = mapperConfiguration.CreateMapper();
+
+    builder.Services.AddDbContext<ApplicationDbContext>(t =>
     {
-        options.TokenValidationParameters = new TokenValidationParameters()
-        {
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtOptions:SecretKey"])),
-            ValidateIssuerSigningKey = true,
-            ValidateAudience = false,
-            ValidateLifetime = true,
-            ValidateIssuer = false,
-        };
+        t.EnableSensitiveDataLogging();
+        t.UseSqlite(connectionString);
     });
 
-var app = builder.Build();
+    builder.Services.AddSingleton(mapper);
+    builder.Services.AddTransient<IStatisticService, StatisticService>();
+    builder.Services.AddTransient<IUserPasswordStore<AppUser>, CustomUserPasswordStore>();
+    builder.Services.AddTransient<IUserRepository, UserRepository>();
+    builder.Services.AddTransient<IUserService, UserService>();
+    builder.Services.AddTransient<IJwtTokenService<AppUser>, JwtTokenService>();
 
-if (!app.Environment.IsDevelopment())
-{
-    app.UseHsts();
+    builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>()
+        .AddDefaultTokenProviders();
+
+    builder.Services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters()
+            {
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtOptions:SecretKey"])),
+                ValidateIssuerSigningKey = true,
+                ValidateAudience = false,
+                ValidateLifetime = true,
+                ValidateIssuer = false,
+            };
+        });
+
+    var app = builder.Build();
+    app.UseMiddleware<ExceptionMiddleware>();
+    if (!app.Environment.IsDevelopment())
+    {
+        app.UseHsts();
+    }
+
+    app.UseHttpsRedirection();
+    app.UseStaticFiles();
+    app.UseRouting();
+
+    app.UseAuthentication();
+    app.UseAuthorization();
+
+    app.MapControllerRoute(
+        "default",
+        "{controller=Home}/{action=Index}/{id?}");
+
+    app.Run();
 }
-
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseMiddleware<ExceptionMiddleware>();
-app.UseRouting();
-
-app.UseAuthentication();
-app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.Run();
+finally
+{
+    LogManager.Shutdown();
+}
 
