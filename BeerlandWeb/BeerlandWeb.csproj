@@ -89,26 +89,22 @@
     </ItemGroup>
 
     <ItemGroup>
-      <TypeScriptCompile Include="d.ts" />
-      <TypeScriptCompile Include="Scripts\basePage.ts" />
-      <TypeScriptCompile Include="Scripts\home.ts" />
-      <TypeScriptCompile Include="Scripts\login.ts" />
-      <TypeScriptCompile Include="Scripts\statistic.ts" />
-      <TypeScriptCompile Include="Utils\Api\ApiBase.ts" />
-      <TypeScriptCompile Include="Utils\Api\AxiosHandler.ts" />
-      <TypeScriptCompile Include="Utils\Converters\MonthConverter.ts" />
-      <TypeScriptCompile Include="Utils\Enums\EMonth.ts" />
-      <TypeScriptCompile Include="Utils\Interfaces\IAuthRequest.ts" />
-      <TypeScriptCompile Include="Utils\Interfaces\IDate.ts" />
-      <TypeScriptCompile Include="Utils\Interfaces\IError.ts" />
-      <TypeScriptCompile Include="Utils\Interfaces\ISeriesEntry.ts" />
-      <TypeScriptCompile Include="Utils\Interfaces\IStatisticViewModel.ts" />
-      <TypeScriptCompile Include="Utils\Interfaces\IAuthResponse.ts" />
-      <TypeScriptCompile Include="Utils\OrderGenerators\RangeGenerator.ts" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="wwwroot\dist" />
+      <TypeScriptCompile Include="VueApp\d.ts" />
+      <TypeScriptCompile Include="VueApp\Scripts\basePage.ts" />
+      <TypeScriptCompile Include="VueApp\Scripts\home.ts" />
+      <TypeScriptCompile Include="VueApp\Scripts\login.ts" />
+      <TypeScriptCompile Include="VueApp\Scripts\statistic.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Api\ApiBase.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Api\AxiosHandler.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Converters\MonthConverter.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Enums\EMonth.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Interfaces\IAuthRequest.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Interfaces\IAuthResponse.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Interfaces\IDate.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Interfaces\IError.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Interfaces\ISeriesEntry.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Interfaces\IStatisticViewModel.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\OrderGenerators\RangeGenerator.ts" />
     </ItemGroup>
 
 </Project>

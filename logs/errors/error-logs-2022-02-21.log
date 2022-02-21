@@ -1,0 +1,5 @@
+2022-02-21 09:54:09.4321|0|ERROR|BeerlandWeb.Middleware.ExceptionMiddleware|Cant add final statistic because start statistic for this date and mark wasn't added |url: https://localhost/statistic/addFinalStat|action: AddFinalStatistic|BeerlandWeb.Middleware.ExceptionMiddleware.InvokeAsync
+2022-02-21 09:54:39.7373|0|ERROR|BeerlandWeb.Middleware.ExceptionMiddleware|Invalid login or password |url: https://localhost/auth/login|action: Login|BeerlandWeb.Middleware.ExceptionMiddleware.InvokeAsync
+2022-02-21 10:05:21.2190|0|ERROR|BeerlandWeb.Middleware.ExceptionMiddleware|Invalid login or password |url: https://localhost/auth/login|action: Login|BeerlandWeb.Middleware.ExceptionMiddleware.InvokeAsync
+2022-02-21 10:05:42.5626|0|ERROR|BeerlandWeb.Middleware.ExceptionMiddleware|Invalid login or password |url: https://localhost/auth/login|action: Login|BeerlandWeb.Middleware.ExceptionMiddleware.InvokeAsync
+2022-02-21 10:06:22.1274|0|ERROR|BeerlandWeb.Middleware.ExceptionMiddleware|Invalid login or password |url: https://localhost/auth/login|action: Login|BeerlandWeb.Middleware.ExceptionMiddleware.InvokeAsync

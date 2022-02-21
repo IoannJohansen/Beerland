@@ -9,7 +9,7 @@ module.exports = {
     login: "./Scripts/login.ts",
   },
   output: {
-    path: path.resolve(__dirname, "./wwwroot/dist"),
+    path: path.resolve(__dirname, "../wwwroot/dist"),
     filename: "[name].bundle.js",
     publicPath: "wwwroot/dist/",
   },

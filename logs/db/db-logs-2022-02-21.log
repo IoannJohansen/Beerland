@@ -1,0 +1,145 @@
+2022-02-21 09:54:09.3472|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__date_Date_0='2022-02-21T00:00:00.0000000+03:00' (DbType = DateTime), @__beerMarkId_1='2'], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target"
+FROM "ProductionStatictics" AS "p"
+WHERE (rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0) AND ("p"."BeerMarkId" = @__beerMarkId_1)
+LIMIT 1 |url: https://localhost/statistic/addFinalStat|action: AddFinalStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 09:54:21.0946|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1 |url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 09:54:21.3140|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='9be5b572-9627-452a-b7ed-0ab187dbe1ca' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0 |url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 09:54:39.7228|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1 |url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 09:58:12.5374|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__date_Date_0='2022-02-21T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 09:58:15.2830|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__date_Date_0='2022-02-11T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 09:58:19.5168|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-18T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 09:58:23.0011|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__date_Date_0='2022-02-11T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 09:58:32.2186|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__date_Date_0='2022-02-21T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:05:21.2190|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='QWE' (Size = 3)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1 |url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:05:36.4070|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__date_Date_0='2022-02-21T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:05:42.5483|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='QWE' (Size = 3)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1 |url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:06:22.1097|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1 |url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:06:23.3598|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1 |url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:06:23.3758|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__userId_0='9be5b572-9627-452a-b7ed-0ab187dbe1ca' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0 |url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:11:45.4692|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__date_Date_0='2022-02-21T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:11:50.1284|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__date_Date_0='2022-02-11T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:47:12.0949|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (70ms) [Parameters=[@__date_Date_0='2022-02-21T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:47:13.7385|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__date_Date_0='2022-02-21T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:47:15.6407|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__date_Date_0='2022-02-21T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:47:39.6720|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__date_Date_0='2022-02-11T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:48:34.4691|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__date_Date_0='2022-02-21T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:49:08.7189|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__date_Date_0='2022-02-21T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:49:11.9224|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__date_Date_0='2022-02-11T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:49:15.4686|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__date_Date_0='2022-02-18T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:49:17.1566|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__date_Date_0='2022-02-16T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:49:26.7044|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__date_Date_0='2022-03-01T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:49:39.1718|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__date_Date_0='2022-02-01T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-21 10:49:41.3445|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__date_Date_0='2022-02-11T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0 |url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
