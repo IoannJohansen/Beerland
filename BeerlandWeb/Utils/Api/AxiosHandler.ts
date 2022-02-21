@@ -1,12 +1,14 @@
-﻿import axios, { AxiosResponse } from "axios";
+﻿import axios, {AxiosRequestHeaders, AxiosResponse} from "axios";
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-//TODO: add passing of headers into query
 export default class AxiosHandler {
-    static axiosGet = async <I>(data : I, url : string, onSuccess : Function, onFail? : Function) => {
+    static axiosGet = async <I>(data : I, url : string, onSuccess : Function, headers : AxiosRequestHeaders, onFail? : Function) => {
         const response = await axios.get<AxiosResponse>(url, {
             params:{
                 ...data,
+            },
+            headers: {
+                ...headers
             },
             validateStatus : status => true
         });
@@ -20,11 +22,14 @@ export default class AxiosHandler {
         }
     }
 
-    static axiosPost = async <I>(data : I, url : string, onSuccess : Function, onFail? : Function) => {
+    static axiosPost = async <I>(data : I, url : string, onSuccess : Function, headers : AxiosRequestHeaders, onFail? : Function) => {
         const response = await axios.post<AxiosResponse>(url, {
             ...data,
         }, {
                 validateStatus : status => true,
+            headers: {
+                    ...headers
+                }
             }
         );
         if (response.status === 200){

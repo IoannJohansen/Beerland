@@ -60,6 +60,8 @@ export default class StatisticPageApp extends BasePage{
                 data: data.map((item)=>item.produced)
             }];
             this.categories = data.map((item)=>item.beerMark)
+        },{
+            
         },(reqConfig) => {
             this.series = [{
                 name: 'Target',

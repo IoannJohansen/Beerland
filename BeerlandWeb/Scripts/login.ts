@@ -41,7 +41,10 @@ export default class Login extends BasePage {
         }, LOGIN, (data : IAuthResponse) => {
             localStorage.setItem("jwt", data.access_token);
             window.location.href = INDEX_PAGE;
-        }, (err : AxiosResponse<IError>)=>{
+        },{
+            
+        }, 
+            (err : AxiosResponse<IError>)=>{
             this.showError = true;
             this.errorMessage = err.data.ErrorMessage;
         });

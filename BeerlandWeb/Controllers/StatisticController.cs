@@ -48,7 +48,7 @@ public class StatisticController : Controller
     public async Task<IActionResult> AddFinalStatistic([FromBody] FinalStatisticViewModel finalStatisticViewModel)
     {
         var startStatistic = await _statisticService.GetByNameAndDate(DateTime.Now, finalStatisticViewModel.BeerMarkId);
-        if (startStatistic == null) throw new Exception("Start statistic for this date and mark wasn't added");
+        if (startStatistic == null) throw new Exception("Cant add final statistic because start statistic for this date and mark wasn't added");
         var updatedStatistic = await _statisticService.AddFinalStatistic(finalStatisticViewModel);
         return StatusCode(StatusCodes.Status200OK, updatedStatistic);
     }

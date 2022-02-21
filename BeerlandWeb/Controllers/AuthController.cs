@@ -1,4 +1,5 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Authentication;
 using BLL.Interfaces;
 using BLL.ViewModels;
 using DAL.Entities;
@@ -35,7 +36,7 @@ public class AuthController : Controller
         var user = await _userManager.FindByNameAsync(loginRequestVm.Login);
         if (!await _userManager.CheckPasswordAsync(user, loginRequestVm.Password))
         {
-            throw new Exception("Invalid login or password");
+            throw new AuthenticationException("Invalid login or password");
         }
         var token = await _jwtTokenService.GenerateJwtToken(user);
         return new LoginResponseViewModel
