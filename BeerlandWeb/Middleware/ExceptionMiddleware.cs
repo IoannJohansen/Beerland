@@ -2,6 +2,8 @@
 using System.Text.Json;
 using BeerlandWeb.Core.Extensions;
 using DAL.Entities;
+using NLog;
+using LogLevel = NLog.LogLevel;
 
 namespace BeerlandWeb.Middleware;
 
@@ -24,21 +26,32 @@ public class ExceptionMiddleware
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex.Message);
-            await HandleExceptionAsync(httpContext, ex);
+            var errorModel = new ErrorModel
+            {
+                ErrorMessage = "Something went wrong!",
+                ErrorId = Guid.NewGuid()
+            };
+            var logger = LogManager.GetCurrentClassLogger();
+            var errorInfo = new LogEventInfo(LogLevel.Error, nameof(ExceptionMiddleware), ex.Message)
+            {
+                Properties =
+                {
+                    ["ErrorId"] = errorModel.ErrorId
+                },
+                Exception = ex
+            };
+            logger.Error(errorInfo);
+            await HandleExceptionAsync(httpContext, errorModel);
         }
     }
     
-    private async Task HandleExceptionAsync(HttpContext context, Exception exception)
+    private async Task HandleExceptionAsync(HttpContext context, ErrorModel error)
     {
         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
         if (context.Request.IsAjaxRequest())
         {
             context.Response.ContentType = "application/json";
-            await context.Response.WriteAsync(JsonSerializer.Serialize(new ErrorModel()
-            {
-                ErrorMessage = exception.Message,
-            }));
+            await context.Response.WriteAsync(JsonSerializer.Serialize(error));
         }
         else
         {

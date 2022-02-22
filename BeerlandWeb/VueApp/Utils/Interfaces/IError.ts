@@ -1,3 +1,4 @@
 ﻿export default interface IError {
-    ErrorMessage : string
+    ErrorMessage : string,
+    ErrorId: string
 }

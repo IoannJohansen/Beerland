@@ -28,9 +28,9 @@ public class StatisticController : Controller
         var statistic = await _statisticService.GetByDate(date);
         if (statistic.Count == 0)
         {
-            return StatusCode(StatusCodes.Status204NoContent);
+            throw new Exception("Statistic for this date wasn't added");
         }
-        return StatusCode(StatusCodes.Status200OK, statistic);
+        return Ok(statistic);
     }
     
     [HttpPost]

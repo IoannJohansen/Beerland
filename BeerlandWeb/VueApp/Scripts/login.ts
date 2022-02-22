@@ -16,7 +16,8 @@ export default class Login extends BasePage {
             login: this.login,
             password: this.password,
             showError: this.showError,
-            errorMessage: this.errorMessage
+            errorMessage: this.errorMessage,
+            errorId: this.errorId
         }
         this.pageMethods = {
             loginHandler: this.loginHandler
@@ -32,7 +33,9 @@ export default class Login extends BasePage {
 
     private password : string =  ''
     
-    private errorMessage : String = ''
+    private errorMessage : string = ''
+    
+    private errorId : string = ''
     
     private loginHandler() : void {
         AxiosHandler.axiosPost<IAuthRequest>({
@@ -47,10 +50,9 @@ export default class Login extends BasePage {
             (err : AxiosResponse<IError>)=>{
             this.showError = true;
             this.errorMessage = err.data.ErrorMessage;
+            this.errorId = err.data.ErrorId;
         });
     }
-    
-    
 }
 
 new Login();

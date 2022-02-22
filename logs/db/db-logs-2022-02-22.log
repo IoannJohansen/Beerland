@@ -1,0 +1,240 @@
+2022-02-22 00:00:31.5641|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.Internal.RelationalCommandDiagnosticsLogger.CommandReaderExecutedAsync
+2022-02-22 00:21:50.9013|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (57ms) [Parameters=[@__date_Date_0='2022-02-22T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:21:53.5152|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-11T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:21:55.6253|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-18T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:22:03.5519|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:22:03.7656|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='9be5b572-9627-452a-b7ed-0ab187dbe1ca' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:22:06.8446|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-22T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:22:09.9848|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-11T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:22:16.4221|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:23:21.9392|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:30:04.9375|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:51:14.7925|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (84ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 00:51:22.5473|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:43:19.7383|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (68ms) [Parameters=[@__date_Date_0='2022-02-22T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:44:06.0482|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:44:11.9103|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:44:11.9797|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='9be5b572-9627-452a-b7ed-0ab187dbe1ca' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:44:18.4241|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:46:56.3131|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-22T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:47:00.5476|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-13T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:47:02.9383|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-11T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:47:09.7667|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-22T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:47:32.4069|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:47:36.0942|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='TEST1' (Size = 5)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:51:18.8000|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (30ms) [Parameters=[@__normalizedUserName_0='Q' (Size = 1)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:52:27.6721|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='Q' (Size = 1)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:52:33.3135|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='Q' (Size = 1)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:52:52.0014|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='Q' (Size = 1)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:53:04.2817|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='Q' (Size = 1)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:53:50.8437|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='Q' (Size = 1)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:54:04.4701|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QW' (Size = 2)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:54:09.9082|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='Q' (Size = 1)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:55:58.4528|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QW' (Size = 2)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:56:17.0309|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='WE' (Size = 2)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:58:22.8766|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QW' (Size = 2)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 09:59:12.5477|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QWE' (Size = 3)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:01:21.2822|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QE' (Size = 2)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:01:33.8909|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QWE' (Size = 3)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:04:58.9225|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QW' (Size = 2)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:05:10.7360|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QW' (Size = 2)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:06:14.5949|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QW' (Size = 2)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:07:25.7036|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QW' (Size = 2)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:07:41.7196|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='QW' (Size = 2)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1|url: https://localhost/auth/login|action: Login|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:08:16.5010|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-22T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:08:19.1563|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-11T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:17:09.1054|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (31ms) [Parameters=[@__date_Date_0='2022-02-12T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:17:25.8908|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-13T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-02-22 10:17:46.7664|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__date_Date_0='2022-02-13T00:00:00.0000000' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."BeerMarkId", "p"."Date", "p"."Produced", "p"."Target", "b"."Id", "b"."Name"
+FROM "ProductionStatictics" AS "p"
+INNER JOIN "BeerMarks" AS "b" ON "p"."BeerMarkId" = "b"."Id"
+WHERE rtrim(rtrim(strftime('%Y-%m-%d %H:%M:%f', "p"."Date", 'start of day'), '0'), '.') = @__date_Date_0|url: https://localhost/statistic/getStat|action: GetStatistic|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
