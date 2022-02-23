@@ -5,10 +5,10 @@ import vuetify from "../Plugins/vuetify";
 
 export default class BasePage {
 
-    constructor(childPageComponents : Object) {
+    constructor(childPageComponents: Object) {
         this.childPageComponents = childPageComponents;
     }
-    
+
     protected childPageComponents = {}
 
     protected pageData = {}
@@ -16,13 +16,13 @@ export default class BasePage {
     protected pageMethods = {}
 
     protected lifeCycleHooks = {}
-    
+
     private components = {
         AppBar,
         AppContainer
     }
-    
-    protected startVueApp(){
+
+    protected startVueApp() {
         new Vue({
             vuetify,
             el: "#app",
@@ -34,6 +34,6 @@ export default class BasePage {
             methods: this.pageMethods,
             ...this.lifeCycleHooks
         })
-        
+
     }
 }

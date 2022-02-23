@@ -8,9 +8,7 @@ import {AxiosResponse} from "axios";
 
 export default class Login extends BasePage {
     constructor() {
-        super({
-            
-        });
+        super({});
         this.pageData = {
             showPassword: this.showPassword,
             login: this.login,
@@ -27,31 +25,29 @@ export default class Login extends BasePage {
 
     private showPassword: boolean = false
 
-    private showError : boolean = false
-    
-    private login : string =  ''
+    private showError: boolean = false
 
-    private password : string =  ''
-    
-    private errorMessage : string = ''
-    
-    private errorId : string = ''
-    
-    private loginHandler() : void {
+    private login: string = ''
+
+    private password: string = ''
+
+    private errorMessage: string = ''
+
+    private errorId: string = ''
+
+    private loginHandler(): void {
         AxiosHandler.axiosPost<IAuthRequest>({
-            login: this.login,
-            password: this.password
-        }, LOGIN, (data : IAuthResponse) => {
-            localStorage.setItem("jwt", data.access_token);
-            window.location.href = INDEX_PAGE;
-        },{
-            
-        }, 
-            (err : AxiosResponse<IError>)=>{
-            this.showError = true;
-            this.errorMessage = err.data.ErrorMessage;
-            this.errorId = err.data.ErrorId;
-        });
+                login: this.login,
+                password: this.password
+            }, LOGIN, (data: IAuthResponse) => {
+                localStorage.setItem("jwt", data.access_token);
+                window.location.href = INDEX_PAGE;
+            }, {},
+            (err: AxiosResponse<IError>) => {
+                this.showError = true;
+                this.errorMessage = err.data.ErrorMessage;
+                this.errorId = err.data.ErrorId;
+            });
     }
 }
 

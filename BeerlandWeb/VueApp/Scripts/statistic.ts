@@ -7,20 +7,20 @@ import IStatisticViewModel from "../Utils/Interfaces/IStatisticViewModel";
 import AxiosHandler from "../Utils/Api/AxiosHandler";
 import {GET_STAT_BY_DATE} from "../Utils/Api/ApiBase";
 
-export default class StatisticPageApp extends BasePage{
-    
+export default class StatisticPageApp extends BasePage {
+
     constructor() {
         super({
             DatePicker,
             StatisticDrawer
         });
-        
+
         this.pageData = {
             selectedDate: this.selectedDate,
             series: this.series,
             categories: this.categories
         }
-        
+
         this.pageMethods = {
             onDatePickHandler: this.onDatePickHandler
         }
@@ -31,38 +31,36 @@ export default class StatisticPageApp extends BasePage{
         this.startVueApp();
     }
 
-    private selectedDate : IDate = {
+    private selectedDate: IDate = {
         Year: new Date().getFullYear(),
-        Month: new Date().getMonth()+1,
+        Month: new Date().getMonth() + 1,
         Day: new Date().getDate(),
     }
-    
-    private series : Array<ISeriesEntry> = [{
+
+    private series: Array<ISeriesEntry> = [{
         name: 'Target',
         data: []
     }, {
         name: 'Produced',
         data: []
     }]
-    
-    private categories : Array<String> = []
-    
-    private onDatePickHandler(date : IDate) {
+
+    private categories: Array<String> = []
+
+    private onDatePickHandler(date: IDate) {
         const requestParam = {
             date: `${date.Year}.${date.Month}.${date.Day}`
         }
-        AxiosHandler.axiosGet<Object>(requestParam, GET_STAT_BY_DATE, (data : Array<IStatisticViewModel>)=>{
+        AxiosHandler.axiosGet<Object>(requestParam, GET_STAT_BY_DATE, (data: Array<IStatisticViewModel>) => {
             this.series = [{
                 name: 'Target',
-                data: data.map((item)=>item.target)
+                data: data.map((item) => item.target)
             }, {
                 name: 'Produced',
-                data: data.map((item)=>item.produced)
+                data: data.map((item) => item.produced)
             }];
-            this.categories = data.map((item)=>item.beerMark)
-        },{
-            
-        },(reqConfig) => {
+            this.categories = data.map((item) => item.beerMark)
+        }, {}, (reqConfig) => {
             this.series = [{
                 name: 'Target',
                 data: []
@@ -73,8 +71,8 @@ export default class StatisticPageApp extends BasePage{
             this.categories = []
         })
     }
-    
-    private mounted(){
+
+    private mounted() {
         this.onDatePickHandler(this.selectedDate);
     }
 }

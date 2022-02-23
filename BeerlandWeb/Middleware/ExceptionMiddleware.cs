@@ -10,12 +10,10 @@ namespace BeerlandWeb.Middleware;
 public class ExceptionMiddleware
 {
     private readonly RequestDelegate _next;
-    private readonly ILogger<ExceptionMiddleware> _logger;
 
-    public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger)
+    public ExceptionMiddleware(RequestDelegate next)
     {
         _next = next;
-        _logger = logger;
     }
 
     public async Task InvokeAsync(HttpContext httpContext)
@@ -44,10 +42,10 @@ public class ExceptionMiddleware
             await HandleExceptionAsync(httpContext, errorModel);
         }
     }
-    
+
     private async Task HandleExceptionAsync(HttpContext context, ErrorModel error)
     {
-        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+        context.Response.StatusCode = (int) HttpStatusCode.InternalServerError;
         if (context.Request.IsAjaxRequest())
         {
             context.Response.ContentType = "application/json";

@@ -1,6 +1,6 @@
 ﻿<template>
   <div>
-    <apexcharts type="bar" height="550" :series="series" :options="options" ></apexcharts>
+    <apexcharts type="bar" height="550" :series="series" :options="options"></apexcharts>
   </div>
 </template>
 
@@ -9,7 +9,8 @@ import Vue from "vue";
 import Component from "vue-class-component";
 import VueApexCharts from 'vue-apexcharts';
 import ISeriesEntry from "../Utils/Interfaces/ISeriesEntry";
-import { Prop } from "vue-property-decorator";
+import {Prop} from "vue-property-decorator";
+
 Vue.use(VueApexCharts);
 
 @Component({
@@ -28,14 +29,14 @@ export default class StatisticDrawer extends Vue {
       name: 'Produced',
       data: []
     }]
-  }) series! : Array<ISeriesEntry>
+  }) series!: Array<ISeriesEntry>
 
   @Prop({
     default: []
-  }) categories! : Array<String>
-  
+  }) categories!: Array<String>
+
   private options = {
-    xaxis: {  
+    xaxis: {
       type: "category",
       categories: this.categories
     },
@@ -65,14 +66,13 @@ export default class StatisticDrawer extends Vue {
       }
     }
   }
-  
-  private updated(){
+
+  private updated() {
     ApexCharts.exec("chart", "updateOptions", {
       xaxis: {
         categories: this.categories
       }
     })
   }
-  
 }
 </script>
