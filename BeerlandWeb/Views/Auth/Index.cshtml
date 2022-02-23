@@ -8,9 +8,9 @@
     <v-form ref="form" class="d-flex flex-column">
         <v-alert
             v-if="showError"
-            color="red lighten-2"
-            align="center"
-            dark>
+            prominent
+            type="error"
+            align="center">
             <p>{{errorMessage}}</p>
             <p>ID: {{errorId}}</p>
         </v-alert>

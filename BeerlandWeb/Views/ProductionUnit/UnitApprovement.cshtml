@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Unit approve";
+    Layout = "_Layout";
+}
+
+<div class="d-flex flex-row">
+    <div class="col-3">
+        <Date-Picker v-on:pick="onDatePickHandler"/>
+    </div>
+    <div class="col-9">
+        <v-alert
+            v-if="showAlert"
+            dense
+            type="success">
+            Unit approved
+        </v-alert>
+        <v-data-table
+            :headers="headers"
+            :items="items"
+            class="elevation-1"
+            :items-per-page="20"
+            hide-default-footer>
+            <template v-slot:item.approve="{ item }">
+                <v-btn v-on:click="onApproveBtnClick(item)" class="primary">
+                    Approve
+                </v-btn>
+            </template>
+        </v-data-table>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src=@Url.Content("~/dist/unitApprovement.bundle.js")></script>
+}

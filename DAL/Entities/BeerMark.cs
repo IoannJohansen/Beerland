@@ -1,12 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace DAL.Entities
+namespace DAL.Entities;
+
+public class BeerMark
 {
-    public class BeerMark
-    {
-        [Key]
-        public long Id { get; set; }
-        [Required]
-        public string Name { get; set; }
-    }
+    [Key] public long Id { get; set; }
+
+    [Required] public string Name { get; set; }
 }

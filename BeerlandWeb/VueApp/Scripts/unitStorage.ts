@@ -1,13 +1,11 @@
 ﻿import BasePage from "./basePage";
 
-class HomePageApp extends BasePage{
+class UnitStorageApp extends BasePage {
 
     constructor() {
-        super({
-            
-        });
+        super({});
         this.startVueApp()
     }
 }
 
-new HomePageApp();
+new UnitStorageApp();

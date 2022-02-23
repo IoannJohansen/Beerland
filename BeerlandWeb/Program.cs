@@ -24,15 +24,12 @@ try
     builder.Logging.ClearProviders();
     builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
     builder.Host.UseNLog();
-    
+
     builder.Services.AddControllersWithViews();
 
     var connectionString = builder.Configuration.GetConnectionString("default");
 
-    var mapperConfiguration = new MapperConfiguration(opt =>
-    {
-        opt.AddProfile(new MappingProfile());
-    });
+    var mapperConfiguration = new MapperConfiguration(opt => { opt.AddProfile(new MappingProfile()); });
     var mapper = mapperConfiguration.CreateMapper();
 
     builder.Services.AddDbContext<ApplicationDbContext>(t =>
@@ -42,7 +39,7 @@ try
     });
 
     builder.Services.AddSingleton(mapper);
-    builder.Services.AddTransient<IStatisticService, StatisticService>();
+    builder.Services.AddTransient<IProductionUnitService, ProductionUnitService>();
     builder.Services.AddTransient<IUserPasswordStore<AppUser>, CustomUserPasswordStore>();
     builder.Services.AddTransient<IUserRepository, UserRepository>();
     builder.Services.AddTransient<IUserService, UserService>();
@@ -60,20 +57,18 @@ try
         {
             options.TokenValidationParameters = new TokenValidationParameters()
             {
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtOptions:SecretKey"])),
+                IssuerSigningKey =
+                    new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtOptions:SecretKey"])),
                 ValidateIssuerSigningKey = true,
                 ValidateAudience = false,
                 ValidateLifetime = true,
-                ValidateIssuer = false,
+                ValidateIssuer = false
             };
         });
 
     var app = builder.Build();
     app.UseMiddleware<ExceptionMiddleware>();
-    if (!app.Environment.IsDevelopment())
-    {
-        app.UseHsts();
-    }
+    if (!app.Environment.IsDevelopment()) app.UseHsts();
 
     app.UseHttpsRedirection();
     app.UseStaticFiles();
@@ -92,4 +87,3 @@ finally
 {
     LogManager.Shutdown();
 }
-
