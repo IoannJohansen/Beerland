@@ -13,5 +13,6 @@ public class MappingProfile : Profile
         CreateMap<CreateStatisticViewModel, ProductionUnit>();
         CreateMap<ProductionUnit, ProductionUnitViewModel>()
             .ForMember(m => m.BeerMark, opt => opt.MapFrom(f => f.BeerMark.Name));
+        CreateMap<BeerMark, BeerMarkViewModel>().ForMember(t => t.BeerMark, opt => opt.MapFrom(f => f.Name));
     }
 }

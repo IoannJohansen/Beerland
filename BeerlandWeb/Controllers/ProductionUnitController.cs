@@ -1,5 +1,7 @@
-﻿using BLL.Interfaces;
+﻿using AutoMapper;
+using BLL.Interfaces;
 using BLL.ViewModels;
+using DAL.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BeerlandWeb.Controllers;
@@ -8,10 +10,15 @@ namespace BeerlandWeb.Controllers;
 public class ProductionUnitController : Controller
 {
     private readonly IProductionUnitService _productionUnitService;
+    private readonly IProductionHistoryService _historyService;
+    private readonly IMapper _mapper;
 
-    public ProductionUnitController(IProductionUnitService productionUnitService)
+    public ProductionUnitController(IProductionUnitService productionUnitService,
+        IProductionHistoryService historyService, IMapper mapper)
     {
         _productionUnitService = productionUnitService;
+        _historyService = historyService;
+        _mapper = mapper;
     }
 
     [HttpGet]
@@ -39,8 +46,10 @@ public class ProductionUnitController : Controller
 
     [HttpGet]
     [Route("approveUnit")]
-    public async Task<ProductionUnitViewModel> ApproveUnit(long id)
+    public async Task<ProductionUnitViewModel> ApproveUnit(long unitId)
     {
-        return await _productionUnitService.ApproveProductionUnit(id);
+        var approvedUnit = await _productionUnitService.ApproveProductionUnit(unitId);
+        await _historyService.WriteHistory(approvedUnit.BeerMarkId, DateTime.Now, approvedUnit.Produced);
+        return _mapper.Map<ProductionUnit, ProductionUnitViewModel>(approvedUnit);
     }
 }

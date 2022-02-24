@@ -16,7 +16,7 @@ public interface IProductionUnitRepository
 
     Task<ProductionUnit> ApproveProductionUnitAsync(ProductionUnit unit);
 
-    Task<ProductionUnit> GetByIdAsync(long id);
+    Task<ProductionUnit> GetByUnitIdAsync(long unitId);
 
     Task Save();
 }

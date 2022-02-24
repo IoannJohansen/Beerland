@@ -3,7 +3,44 @@
     Layout = "_Layout";
 }
 
-<h1 align="center">Unit storage</h1>
+<div class="d-flex flex-row">
+
+    <div class="col-2">
+        <h2 class="mb-4">Select product</h2>
+        <v-list
+            outlined
+            style="max-height: 80vh"
+            class="overflow-y-auto">
+            <v-list-item-group
+                v-model="selected"
+                active-class="blue--text">
+                <template v-for="(item, index) in beermarks">
+                    <v-list-item :key="beermarks.id">
+                        <template v-slot:default="{ active }">
+                            <v-list-item-content>
+                                <v-list-item-title v-text="item.beerMark"></v-list-item-title>
+                            </v-list-item-content>
+                        </template>
+                    </v-list-item>
+                    <v-divider
+                        v-if="index < beermarks.length - 1"
+                        :key="index">
+                    </v-divider>
+                </template>
+            </v-list-item-group>
+        </v-list>
+    </div>
+    <div class="col-10">
+        <h2 v-if="history.length>0" class="mb-4">Current volume: 12 barrel</h2>
+        <h2 v-else class="mb-4">Current volume is empty</h2>
+        <v-data-table
+            :headers="headers"
+            :items="history"
+            :items-per-page="10"
+            class="elevation-1">
+        </v-data-table>
+    </div>
+</div>
 
 @section Scripts
 {

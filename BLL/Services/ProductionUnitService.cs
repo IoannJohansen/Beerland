@@ -57,12 +57,12 @@ public class ProductionUnitService : IProductionUnitService
         return _mapper.Map<List<ProductionUnit>, List<ProductionUnitViewModel>>(units);
     }
 
-    public async Task<ProductionUnitViewModel> ApproveProductionUnit(long id)
+    public async Task<ProductionUnit> ApproveProductionUnit(long unitId)
     {
-        var unapprovedUnit = await _productionUnitRepository.GetByIdAsync(id);
+        var unapprovedUnit = await _productionUnitRepository.GetByUnitIdAsync(unitId);
         if (unapprovedUnit.State == null) throw new Exception("Can't approve unit without production statistic");
         var approvedUnit = await _productionUnitRepository.ApproveProductionUnitAsync(unapprovedUnit);
         await _productionUnitRepository.Save();
-        return _mapper.Map<ProductionUnit, ProductionUnitViewModel>(approvedUnit);
+        return approvedUnit;
     }
 }

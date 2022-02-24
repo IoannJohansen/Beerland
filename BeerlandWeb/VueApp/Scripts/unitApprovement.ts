@@ -37,7 +37,7 @@ export default class UnitApprovementApp extends BasePage {
 
     private onApproveBtnClick(data: IProductionUnit) {
         AxiosHandler.axiosGet<Object>({
-            id: data.id
+            unitId: data.id
         }, APPROVE_UNIT, (data: IProductionUnit) => {
             this.items = this.items.filter(t => t.id != data.id);
             this.showAlert = true;
@@ -66,7 +66,7 @@ export default class UnitApprovementApp extends BasePage {
             date: `${date.Year}.${date.Month}.${date.Day}`
         }
         AxiosHandler.axiosGet<Object>(requestParam, GET_UNAPROVED_UNITS, (data: Array<IProductionUnit>) => {
-            data.map(t => t.date = moment(t.date).format("YYYY.MM.DD HH.MM.SS"));
+            data.map(t => t.date = moment(t.date).format("YYYY.MM.DD HH:MM:SS"));
             this.items = data;
         }, {}, () => {
             this.items = []

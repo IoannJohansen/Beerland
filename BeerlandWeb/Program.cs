@@ -39,11 +39,17 @@ try
     });
 
     builder.Services.AddSingleton(mapper);
-    builder.Services.AddTransient<IProductionUnitService, ProductionUnitService>();
     builder.Services.AddTransient<IUserPasswordStore<AppUser>, CustomUserPasswordStore>();
     builder.Services.AddTransient<IUserRepository, UserRepository>();
+    builder.Services.AddTransient<IProductionHistoryRepository, ProductionHistoryRepository>();
+    builder.Services.AddTransient<IBeerMarkRepository, BeerMarkRepository>();
+
+    builder.Services.AddTransient<IProductionUnitService, ProductionUnitService>();
     builder.Services.AddTransient<IUserService, UserService>();
     builder.Services.AddTransient<IJwtTokenService<AppUser>, JwtTokenService>();
+    builder.Services.AddTransient<IProductionHistoryService, ProductionHistoryService>();
+    builder.Services.AddTransient<IBeerMarkService, BeerMarkService>();
+
 
     builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>()
         .AddDefaultTokenProviders();

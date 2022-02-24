@@ -31,10 +31,10 @@ public class ProductionUnitRepository : IProductionUnitRepository
             .ToListAsync();
     }
 
-    public async Task<ProductionUnit> GetByIdAsync(long id)
+    public async Task<ProductionUnit> GetByUnitIdAsync(long unitId)
     {
         return (await _applicationDbContext.ProductionUnits.Include(t => t.BeerMark)
-            .FirstOrDefaultAsync(t => t.Id == id))!;
+            .FirstOrDefaultAsync(t => t.Id == unitId))!;
     }
 
     public async Task Save()

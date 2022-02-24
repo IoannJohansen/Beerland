@@ -15,6 +15,8 @@ public class ApplicationDbContext : IdentityDbContext<AppUser, IdentityRole, str
 
     public virtual DbSet<ProductionUnit> ProductionUnits { get; set; }
 
+    public virtual DbSet<ProductionHistory> ProductionHistories { get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.Entity<ProductionUnit>().HasCheckConstraint("CHECK_ProductionUnit_State", "State in (0,1)");

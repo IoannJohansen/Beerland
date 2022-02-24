@@ -2,7 +2,7 @@
     <div>
         <v-app-bar dark elevation="2" density="compact" class="d-flex justify-center">
             <a href="/ProductionUnit/UnitApprovement">
-                <v-btn text>Unit aprove</v-btn>
+                <v-btn text>Unit approve</v-btn>
             </a>
             <v-divider inset vertical></v-divider>
             <a href="/ProductionUnit/UnitStorage">

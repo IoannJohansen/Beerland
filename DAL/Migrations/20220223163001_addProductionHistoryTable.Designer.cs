@@ -3,6 +3,7 @@ using System;
 using DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220223163001_addProductionHistoryTable")]
+    partial class addProductionHistoryTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.2");
@@ -105,15 +107,14 @@ namespace DAL.Migrations
                     b.Property<long>("ActualVolume")
                         .HasColumnType("INTEGER");
 
-                    b.Property<long>("BeerMarkId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("BeerMark")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("BeerMarkId");
 
                     b.ToTable("ProductionHistories");
                 });
@@ -274,17 +275,6 @@ namespace DAL.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("DAL.Entities.ProductionHistory", b =>
-                {
-                    b.HasOne("DAL.Entities.BeerMark", "Beermark")
-                        .WithMany()
-                        .HasForeignKey("BeerMarkId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Beermark");
                 });
 
             modelBuilder.Entity("DAL.Entities.ProductionUnit", b =>

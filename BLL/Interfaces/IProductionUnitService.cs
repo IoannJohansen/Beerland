@@ -15,5 +15,5 @@ public interface IProductionUnitService
 
     Task<List<ProductionUnitViewModel>> GetUnapprovedUnits(DateTime date);
 
-    Task<ProductionUnitViewModel> ApproveProductionUnit(long id);
+    Task<ProductionUnit> ApproveProductionUnit(long unitId);
 }
