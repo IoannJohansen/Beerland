@@ -9,8 +9,7 @@
         <h2 class="mb-4">Select product</h2>
         <v-list
             outlined
-            style="max-height: 80vh"
-            class="overflow-y-auto">
+            class="overflow-y-auto beerMarkList">
             <v-list-item-group
                 v-model="selected"
                 active-class="blue--text">
@@ -41,6 +40,11 @@
         </v-data-table>
     </div>
 </div>
+
+@section Styles
+{
+    <link href=@Url.Content("~/styles/unitStoragePage.css") rel="stylesheet" type="text/css">
+}
 
 @section Scripts
 {
