@@ -31,4 +31,9 @@ public class ProductionHistoryService : IProductionHistoryService
         await _historyRepository.SaveAsync();
         return writedHistory;
     }
+
+    public async Task<double> GetActualValue(long beerMarkId)
+    {
+        return await _historyRepository.GetPreviousVolumeByBeermarkAsync(beerMarkId);
+    }
 }

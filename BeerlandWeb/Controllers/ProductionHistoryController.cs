@@ -1,4 +1,5 @@
 ﻿using BLL.Interfaces;
+using BLL.ViewModels;
 using DAL.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,9 +20,15 @@ public class ProductionHistoryController : Controller
 
     [HttpGet]
     [Route("getProdHistory")]
-    public async Task<List<ProductionHistory>> GetProductionHistory(long beerMarkId)
+    public async Task<HistoryPageViewModel> GetProductionHistory(long beerMarkId)
     {
-        return await _productionHistoryService.GetProductionHistoryAsync(beerMarkId);
+        var history = await _productionHistoryService.GetProductionHistoryAsync(beerMarkId);
+        var actualValue = await _productionHistoryService.GetActualValue(beerMarkId);
+        return new HistoryPageViewModel
+        {
+            History = history,
+            ActualValue = actualValue
+        };
     }
 
     [HttpGet]

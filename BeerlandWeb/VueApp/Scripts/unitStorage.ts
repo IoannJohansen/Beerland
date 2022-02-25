@@ -4,6 +4,7 @@ import IBeerMark from "../Utils/Interfaces/IBeerMark";
 import AxiosHandler from "../Utils/Api/AxiosHandler";
 import {GET_BEERMARKS, GET_PROD_HISTORY} from "../Utils/Api/ApiBase";
 import moment from "moment";
+import IHistoryPageViewModel from "../Utils/Interfaces/IHistoryPageViewModel";
 
 class UnitStorageApp extends BasePage {
 
@@ -14,7 +15,8 @@ class UnitStorageApp extends BasePage {
             selected: this.selected,
             headers: this.headers,
             history: this.history,
-            fetching: this.fetching
+            fetching: this.fetching,
+            actualVolume: this.actualVolume
         }
         this.lifeCycleHooks = {
             mounted: this.mounted,
@@ -39,6 +41,8 @@ class UnitStorageApp extends BasePage {
 
     private history: Array<IHistoryEntry> = []
 
+    private actualVolume: number = 0
+
     private fetching: boolean = false;
 
     private mounted() {
@@ -50,17 +54,16 @@ class UnitStorageApp extends BasePage {
     private updated() {
         if (this.selected != undefined && !this.fetching) {
             this.fetching = true;
-            console.log("Fetch");
             AxiosHandler.axiosGet({
                 beerMarkId: this.beermarks[this.selected].id
-            }, GET_PROD_HISTORY, (data: Array<IHistoryEntry>) => {
-                data.map(t => t.date = moment(t.date).format("YYYY.MM.DD HH:MM:SS"))
-                this.history = data;
+            }, GET_PROD_HISTORY, (data: IHistoryPageViewModel) => {
+                data.history.map(t => t.date = moment(t.date).format("YYYY.MM.DD HH:MM:SS"))
+                this.history = data.history;
+                this.actualVolume = data.actualValue
             }, {}).then(() => {
                 this.fetching = false;
             })
         } else if (this.history.length != 0 && !this.fetching) {
-            console.log("Clear");
             this.history = []
         }
     }

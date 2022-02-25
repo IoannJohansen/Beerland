@@ -105,6 +105,7 @@
       <TypeScriptCompile Include="VueApp\Utils\Interfaces\IDate.ts" />
       <TypeScriptCompile Include="VueApp\Utils\Interfaces\IError.ts" />
       <TypeScriptCompile Include="VueApp\Utils\Interfaces\IHistoryEntry.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Interfaces\IHistoryPageViewModel.ts" />
       <TypeScriptCompile Include="VueApp\Utils\Interfaces\IProductionUnit.ts" />
       <TypeScriptCompile Include="VueApp\Utils\Interfaces\ISeriesEntry.ts" />
       <TypeScriptCompile Include="VueApp\Utils\Interfaces\IStatisticViewModel.ts" />
