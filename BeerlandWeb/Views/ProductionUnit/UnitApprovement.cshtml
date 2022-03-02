@@ -5,14 +5,21 @@
 
 <div class="d-flex flex-row">
     <div class="col-3">
-        <Date-Picker v-on:pick="onDatePickHandler"/>
+        <Date-Picker v-bind:highlighted-Days="highlightedDays" v-on:pick="onDatePickHandler"/>
     </div>
     <div class="col-9">
         <v-alert
-            v-if="showAlert"
+            v-if="showSuccess"
             dense
             type="success">
             Unit approved
+        </v-alert>
+        <v-alert
+            v-if="showError"
+            prominent
+            dense
+            type="error">
+            Something went wrong
         </v-alert>
         <v-data-table
             :headers="headers"

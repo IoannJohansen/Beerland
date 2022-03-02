@@ -1,5 +1,5 @@
-﻿using DAL.Entities;
-using BLL.ViewModels;
+﻿using BLL.ViewModels;
+using DAL.Entities;
 
 namespace BLL.Interfaces;
 
@@ -16,4 +16,6 @@ public interface IProductionUnitService
     Task<List<ProductionUnitViewModel>> GetUnapprovedUnits(DateTime date);
 
     Task<ProductionUnit> ApproveProductionUnit(long unitId);
+
+    Task<List<int>> GetUnapprovedDays(DateTime date);
 }

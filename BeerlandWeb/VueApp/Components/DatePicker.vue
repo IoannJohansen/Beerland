@@ -2,42 +2,61 @@
     <v-form class="date-input-form">
         <v-col>
             <v-select
-                @change="changeDate(emitDatePick)"
-                outlined
-                dense
-                menu-props="auto"
                 v-model="selectedYear"
                 :items="years"
                 :rules="[v => !!v || 'Item is required']"
+                dense
                 label="Select year"
+                menu-props="auto"
+                outlined
                 required
+                @change="changeDate(emitDatePick)"
             ></v-select>
         </v-col>
         <v-col>
             <v-select
-                @change="changeDate(emitDatePick)"
-                outlined
-                dense
-                menu-props="auto"
                 v-model="selectedMonth"
                 :items="months"
                 :rules="[v => !!v || 'Item is required']"
+                dense
                 label="Select month"
+                menu-props="auto"
+                outlined
                 required
+                @change="changeDate(emitDatePick)"
             ></v-select>
         </v-col>
         <v-col>
             <v-select
-                @change="emitDatePick()"
-                outlined
-                dense
-                menu-props="auto"
                 v-model="selectedDay"
                 :items="days"
                 :rules="[v => !!v || 'Item is required']"
+                dense
                 label="Select day"
+                menu-props="auto"
+                outlined
                 required
-            ></v-select>
+                @change="emitDatePick()"
+            >
+                <template v-slot:item="{ active, item, attrs, on }">
+                    <v-list-item #default="{ active }" v-bind="attrs" v-on="on">
+                        <v-list-item-content>
+                            <v-list-item-title>
+                                <v-row align="center" no-gutters>
+                                    <span
+                                        v-if="highlightedDays.includes(item)"
+                                        class="red--text">{{
+                                            item
+                                        }}</span>
+                                    <span v-else>{{
+                                            item
+                                        }}</span>
+                                </v-row>
+                            </v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                </template>
+            </v-select>
         </v-col>
     </v-form>
 
@@ -48,6 +67,7 @@ import Component from "vue-class-component";
 import Vue from "vue";
 import {range, reverseRange} from "../Utils/OrderGenerators/RangeGenerator";
 import {eMonthToArray, monthToNum, numToMonth} from "../Utils/Converters/MonthConverter";
+import {Prop} from "vue-property-decorator";
 
 const moment = require('moment');
 
@@ -55,6 +75,8 @@ const moment = require('moment');
     name: "Date-Picker",
 })
 export default class DatePicker extends Vue {
+
+    @Prop({type: Array, default: () => []}) highlightedDays
 
     private years: Number[] = [...reverseRange(new Date().getFullYear(), new Date().getFullYear() - 100)]
 

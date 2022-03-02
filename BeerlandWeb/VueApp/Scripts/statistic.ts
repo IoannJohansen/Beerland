@@ -9,6 +9,20 @@ import {GET_STAT_BY_DATE} from "../Utils/Api/ApiBase";
 
 export default class StatisticPageApp extends BasePage {
 
+    private selectedDate: IDate = {
+        Year: new Date().getFullYear(),
+        Month: new Date().getMonth() + 1,
+        Day: new Date().getDate(),
+    }
+    private series: Array<ISeriesEntry> = [{
+        name: 'Target',
+        data: []
+    }, {
+        name: 'Produced',
+        data: []
+    }]
+    private categories: Array<String> = []
+
     constructor() {
         super({
             DatePicker,
@@ -24,28 +38,12 @@ export default class StatisticPageApp extends BasePage {
         this.pageMethods = {
             onDatePickHandler: this.onDatePickHandler
         }
-        
+
         this.lifeCycleHooks = {
             mounted: this.mounted
         }
         this.startVueApp();
     }
-
-    private selectedDate: IDate = {
-        Year: new Date().getFullYear(),
-        Month: new Date().getMonth() + 1,
-        Day: new Date().getDate(),
-    }
-
-    private series: Array<ISeriesEntry> = [{
-        name: 'Target',
-        data: []
-    }, {
-        name: 'Produced',
-        data: []
-    }]
-
-    private categories: Array<String> = []
 
     private onDatePickHandler(date: IDate) {
         const requestParam = {
@@ -60,7 +58,7 @@ export default class StatisticPageApp extends BasePage {
                 data: data.map((item) => item.produced)
             }];
             this.categories = data.map((item) => item.beerMark)
-        }, {}, (reqConfig) => {
+        }, {}, (req) => {
             this.series = [{
                 name: 'Target',
                 data: []

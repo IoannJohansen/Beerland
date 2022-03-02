@@ -37,6 +37,14 @@ public class ProductionUnitRepository : IProductionUnitRepository
             .FirstOrDefaultAsync(t => t.Id == unitId))!;
     }
 
+    public async Task<List<int>> GetUnapprovedDays(DateTime date)
+    {
+        return await _applicationDbContext.ProductionUnits
+            .Where(t => t.Date.Year == date.Year && t.Date.Month == date.Month && t.State == 0).Select(t => t.Date.Day)
+            .Distinct()
+            .ToListAsync();
+    }
+
     public async Task Save()
     {
         await _applicationDbContext.SaveChangesAsync();
@@ -55,7 +63,10 @@ public class ProductionUnitRepository : IProductionUnitRepository
 
     public async Task<ProductionUnit> ApproveProductionUnitAsync(ProductionUnit unit)
     {
-        unit.State = 1;
-        return _applicationDbContext.ProductionUnits.Update(unit).Entity;
+        return await Task.Run(() =>
+        {
+            unit.State = 1;
+            return _applicationDbContext.ProductionUnits.Update(unit).Entity;
+        });
     }
 }

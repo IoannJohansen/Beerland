@@ -1,6 +1,12 @@
 ﻿@{
-    ViewBag.Title = "Homepage";
+    ViewBag.Title = "Home page";
     Layout = "_Layout";
 }
 
-<h2 align="center">Home page</h2>
+<h2 class="mt-4" v-if="userRole != undefined" align="center">Hello {{userName}}, your current role is: {{userRole}}</h2>
+<h2 class="mt-4" align="center" v-else>Hello, guest!</h2>
+
+@section Scripts
+{
+    <script src="~/dist/home.bundle.js"></script>
+}

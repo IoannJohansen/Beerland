@@ -2,6 +2,7 @@
 using BLL.Interfaces;
 using BLL.ViewModels;
 using DAL.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BeerlandWeb.Controllers;
@@ -9,9 +10,9 @@ namespace BeerlandWeb.Controllers;
 [Route("ProductionUnit")]
 public class ProductionUnitController : Controller
 {
-    private readonly IProductionUnitService _productionUnitService;
     private readonly IProductionHistoryService _historyService;
     private readonly IMapper _mapper;
+    private readonly IProductionUnitService _productionUnitService;
 
     public ProductionUnitController(IProductionUnitService productionUnitService,
         IProductionHistoryService historyService, IMapper mapper)
@@ -36,6 +37,15 @@ public class ProductionUnitController : Controller
     }
 
     [HttpGet]
+    [Authorize(Roles = "Manager, Supervisor")]
+    [Route("getUnapprovedDays")]
+    public async Task<List<int>> GetUnapprovedDays(DateTime date)
+    {
+        return await _productionUnitService.GetUnapprovedDays(date);
+    }
+
+    [HttpGet]
+    [Authorize(Roles = "Manager, Supervisor")]
     [Route("getUnapprovedUnits")]
     public async Task<List<ProductionUnitViewModel>> GetUnapprovedUnits(DateTime date)
     {
@@ -45,6 +55,7 @@ public class ProductionUnitController : Controller
     }
 
     [HttpGet]
+    [Authorize(Roles = "Manager")]
     [Route("approveUnit")]
     public async Task<ProductionUnitViewModel> ApproveUnit(long unitId)
     {

@@ -1,24 +1,24 @@
 ﻿using AutoMapper;
 using BLL.Interfaces;
+using BLL.ViewModels;
 using DAL;
 using DAL.Entities;
 using DAL.Repositories.Interfaces;
 using DAL.Repositories.Repositories;
-using BLL.ViewModels;
 
 namespace BLL.Services;
 
 public class ProductionUnitService : IProductionUnitService
 {
+    private readonly IMapper _mapper;
+
+    private readonly IProductionUnitRepository _productionUnitRepository;
+
     public ProductionUnitService(ApplicationDbContext applicationDbContext, IMapper mapper)
     {
         _productionUnitRepository = new ProductionUnitRepository(applicationDbContext);
         _mapper = mapper;
     }
-
-    private readonly IProductionUnitRepository _productionUnitRepository;
-
-    private readonly IMapper _mapper;
 
     public async Task<List<StatisticViewModel>> GetByDate(DateTime date)
     {
@@ -64,5 +64,10 @@ public class ProductionUnitService : IProductionUnitService
         var approvedUnit = await _productionUnitRepository.ApproveProductionUnitAsync(unapprovedUnit);
         await _productionUnitRepository.Save();
         return approvedUnit;
+    }
+
+    public async Task<List<int>> GetUnapprovedDays(DateTime date)
+    {
+        return await _productionUnitRepository.GetUnapprovedDays(date);
     }
 }

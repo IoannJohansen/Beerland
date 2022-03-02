@@ -1,6 +1,7 @@
 ﻿using BLL.Interfaces;
 using BLL.ViewModels;
 using DAL.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BeerlandWeb.Controllers;
@@ -19,6 +20,7 @@ public class ProductionHistoryController : Controller
     }
 
     [HttpGet]
+    [Authorize(Roles = "Supervisor, Manager")]
     [Route("getProdHistory")]
     public async Task<HistoryPageViewModel> GetProductionHistory(long beerMarkId)
     {
