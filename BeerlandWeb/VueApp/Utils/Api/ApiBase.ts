@@ -7,6 +7,7 @@ export const LOGIN = API_BASE + "auth/login";
 
 export const GET_UNAPROVED_UNITS = API_BASE + "ProductionUnit/getUnapprovedUnits";
 export const APPROVE_UNIT = API_BASE + "ProductionUnit/approveUnit";
+export const GET_UNAPPROVED_DAYS = API_BASE + "ProductionUnit/getUnapprovedDays"
 
 export const GET_BEERMARKS = API_BASE + "ProductionHistory/getBeermarks";
 export const GET_PROD_HISTORY = API_BASE + "ProductionHistory/getProdHistory";

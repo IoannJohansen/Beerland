@@ -91,6 +91,7 @@
     <ItemGroup>
       <TypeScriptCompile Include="VueApp\d.ts" />
       <TypeScriptCompile Include="VueApp\Scripts\basePage.ts" />
+      <TypeScriptCompile Include="VueApp\Scripts\home.ts" />
       <TypeScriptCompile Include="VueApp\Scripts\unitStorage.ts" />
       <TypeScriptCompile Include="VueApp\Scripts\login.ts" />
       <TypeScriptCompile Include="VueApp\Scripts\statistic.ts" />
@@ -110,6 +111,7 @@
       <TypeScriptCompile Include="VueApp\Utils\Interfaces\ISeriesEntry.ts" />
       <TypeScriptCompile Include="VueApp\Utils\Interfaces\IStatisticViewModel.ts" />
       <TypeScriptCompile Include="VueApp\Utils\OrderGenerators\RangeGenerator.ts" />
+      <TypeScriptCompile Include="VueApp\Utils\Services\JwtService.ts" />
     </ItemGroup>
 
 </Project>

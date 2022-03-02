@@ -18,5 +18,7 @@ public interface IProductionUnitRepository
 
     Task<ProductionUnit> GetByUnitIdAsync(long unitId);
 
+    Task<List<int>> GetUnapprovedDays(DateTime date);
+
     Task Save();
 }

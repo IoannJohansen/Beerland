@@ -5,7 +5,7 @@ using DAL.Entities;
 using NLog;
 using LogLevel = NLog.LogLevel;
 
-namespace BeerlandWeb.Middleware;
+namespace BeerlandWeb.Core.Middleware;
 
 public class ExceptionMiddleware
 {

@@ -5,8 +5,16 @@ import IAuthResponse from "../Utils/Interfaces/IAuthResponse";
 import IAuthRequest from "../Utils/Interfaces/IAuthRequest";
 import IError from "../Utils/Interfaces/IError";
 import {AxiosResponse} from "axios";
+import JwtService from "../Utils/Services/JwtService";
 
 export default class Login extends BasePage {
+    private showPassword: boolean = false
+    private showError: boolean = false
+    private login: string = ''
+    private password: string = ''
+    private errorMessage: string = ''
+    private errorId: string = ''
+
     constructor() {
         super({});
         this.pageData = {
@@ -23,24 +31,12 @@ export default class Login extends BasePage {
         this.startVueApp();
     }
 
-    private showPassword: boolean = false
-
-    private showError: boolean = false
-
-    private login: string = ''
-
-    private password: string = ''
-
-    private errorMessage: string = ''
-
-    private errorId: string = ''
-
     private loginHandler(): void {
         AxiosHandler.axiosPost<IAuthRequest>({
                 login: this.login,
                 password: this.password
             }, LOGIN, (data: IAuthResponse) => {
-                localStorage.setItem("jwt", data.access_token);
+                JwtService.SetJwt(data.access_token);
                 window.location.href = INDEX_PAGE;
             }, {},
             (err: AxiosResponse<IError>) => {

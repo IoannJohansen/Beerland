@@ -5,8 +5,24 @@ import AxiosHandler from "../Utils/Api/AxiosHandler";
 import {GET_BEERMARKS, GET_PROD_HISTORY} from "../Utils/Api/ApiBase";
 import moment from "moment";
 import IHistoryPageViewModel from "../Utils/Interfaces/IHistoryPageViewModel";
+import JwtService from "../Utils/Services/JwtService";
 
 class UnitStorageApp extends BasePage {
+
+    private selected?: number = undefined
+    private headers = [
+        {
+            text: 'Date',
+            align: 'start',
+            value: 'date',
+            sortable: false
+        },
+        {text: 'Volume', align: 'start', value: 'actualVolume'},
+    ]
+    private beermarks: Array<IBeerMark> = []
+    private history: Array<IHistoryEntry> = []
+    private actualVolume: number = 0
+    private fetching: boolean = false;
 
     constructor() {
         super({});
@@ -25,26 +41,6 @@ class UnitStorageApp extends BasePage {
         this.startVueApp()
     }
 
-    private selected?: number = undefined
-
-    private headers = [
-        {
-            text: 'Date',
-            align: 'start',
-            value: 'date',
-            sortable: false
-        },
-        {text: 'Volume', align: 'start', value: 'actualVolume'},
-    ]
-
-    private beermarks: Array<IBeerMark> = []
-
-    private history: Array<IHistoryEntry> = []
-
-    private actualVolume: number = 0
-
-    private fetching: boolean = false;
-
     private mounted() {
         AxiosHandler.axiosGet({}, GET_BEERMARKS, (data: Array<IBeerMark>) => {
             this.beermarks = data;
@@ -60,7 +56,9 @@ class UnitStorageApp extends BasePage {
                 data.history.map(t => t.date = moment(t.date).format("YYYY.MM.DD HH:MM:SS"))
                 this.history = data.history;
                 this.actualVolume = data.actualValue
-            }, {}).then(() => {
+            }, {
+                ...JwtService.GetAuthenticationHeader()
+            }).then(() => {
                 this.fetching = false;
             })
         } else if (this.history.length != 0 && !this.fetching) {

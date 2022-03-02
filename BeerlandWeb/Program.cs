@@ -2,7 +2,7 @@ using System.Text;
 using AutoMapper;
 using BeerlandWeb.Config;
 using BeerlandWeb.Core;
-using BeerlandWeb.Middleware;
+using BeerlandWeb.Core.Middleware;
 using BLL.Interfaces;
 using BLL.Services;
 using DAL;
@@ -61,7 +61,7 @@ try
         })
         .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
         {
-            options.TokenValidationParameters = new TokenValidationParameters()
+            options.TokenValidationParameters = new TokenValidationParameters
             {
                 IssuerSigningKey =
                     new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtOptions:SecretKey"])),

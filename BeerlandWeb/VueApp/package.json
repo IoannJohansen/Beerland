@@ -4,6 +4,8 @@
   "dependencies": {
     "apexcharts": "^3.33.0",
     "axios": "^0.25.0",
+    "claimtypes": "^0.1.0",
+    "jwt-decode": "^3.1.2",
     "moment": "^2.29.1",
     "vue": "^2.6.14",
     "vue-apexcharts": "^1.6.2",
@@ -25,7 +27,7 @@
     "vue-property-decorator": "^9.1.2",
     "vue-template-compiler": "^2.6.14",
     "webpack": "^5.66.0",
-    "webpack-cli": "^4.9.1",
+    "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.3"
   },
   "main": "./Scipts/home.ts",

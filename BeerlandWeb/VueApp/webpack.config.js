@@ -4,6 +4,7 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 module.exports = {
     mode: "development",
     entry: {
+        home: "./Scripts/home.ts",
         statistic: "./Scripts/statistic.ts",
         login: "./Scripts/login.ts",
         unitApprovement: "./Scripts/unitApprovement.ts",

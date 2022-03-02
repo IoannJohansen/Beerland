@@ -5,7 +5,7 @@
 
 <div class="d-flex flex-row">
     <div class="col-3">
-        <Date-Picker v-on:pick="onDatePickHandler"/>
+        <Date-Picker v-bind:highlighted-Days="highlightedDays" v-on:pick="onDatePickHandler"/>
     </div>
     <div class="col-9">
         <v-alert
