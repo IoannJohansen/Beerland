@@ -24,7 +24,9 @@ export default class UnitApprovementApp extends BasePage {
         Day: new Date().getDate(),
     }
 
-    private showAlert: boolean = false
+    private showSuccess: boolean = false
+
+    private showError: boolean = false
 
     private highlightedDays: Array<number> = []
 
@@ -36,8 +38,9 @@ export default class UnitApprovementApp extends BasePage {
             selectedDate: this.selectedDate,
             items: this.items,
             headers: this.headers,
-            showAlert: this.showAlert,
-            highlightedDays: this.highlightedDays
+            showSuccess: this.showSuccess,
+            highlightedDays: this.highlightedDays,
+            showError: this.showError
         };
         this.pageMethods = {
             onDatePickHandler: this.onDatePickHandler,
@@ -57,19 +60,24 @@ export default class UnitApprovementApp extends BasePage {
             unitId: data.id
         }, APPROVE_UNIT, (data: IProductionUnit) => {
             this.items = this.items.filter(t => t.id != data.id);
-            this.showAlert = true;
+            this.showSuccess = true;
             setTimeout(() => {
-                this.showAlert = false;
+                this.showSuccess = false;
             }, 4000);
         }, {
             ...JwtService.GetAuthenticationHeader(),
+        }, (res) => {
+            this.showError = true;
+            setTimeout(() => {
+                this.showError = false;
+            }, 4000);
         });
     }
 
     private onDatePickHandler(date: IDate) {
         this.selectedDate = date;
+        this.fetchUnapprovedDays();
         this.fetchUnapprovedUnits(date);
-        this.fetchUnapprovedDays()
     }
 
     private fetchUnapprovedUnits(date) {
@@ -88,7 +96,7 @@ export default class UnitApprovementApp extends BasePage {
 
     private mounted() {
         this.fetchUnapprovedUnits(this.selectedDate);
-        this.fetchUnapprovedDays()
+        this.fetchUnapprovedDays();
     }
 
     private fetchUnapprovedDays() {

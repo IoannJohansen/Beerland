@@ -40,7 +40,8 @@ public class ProductionUnitRepository : IProductionUnitRepository
     public async Task<List<int>> GetUnapprovedDays(DateTime date)
     {
         return await _applicationDbContext.ProductionUnits
-            .Where(t => t.Date.Year == date.Year && t.Date.Month == date.Month).Select(t => t.Date.Day).Distinct()
+            .Where(t => t.Date.Year == date.Year && t.Date.Month == date.Month && t.State == 0).Select(t => t.Date.Day)
+            .Distinct()
             .ToListAsync();
     }
 
